@@ -1,9 +1,9 @@
 import { Flex, Heading, Text } from '@chakra-ui/react'
 
-export const Hero = ({ title }) => (
+export const Sidebar = () => (
   <>
-    <Flex justifyContent="center">
-      <Heading fontSize="10vw">{title}</Heading>
+    <Flex justifyContent="center" maxW={'15vv'}>
+      <Heading>Sidebar</Heading>
     </Flex>
     <Flex justifyContent="center">
       <Text>All news about crypto coins, altcoins, nfts and descentralization</Text>
@@ -13,6 +13,3 @@ export const Hero = ({ title }) => (
 
 )
 
-Hero.defaultProps = {
-  title: 'Crypto Times',
-}

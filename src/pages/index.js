@@ -1,54 +1,41 @@
-import {
-  Link as ChakraLink,
-  Text,
-  Code,
-  List,
-  ListIcon,
-  ListItem,
-} from '@chakra-ui/react'
-import { CheckCircleIcon, LinkIcon } from '@chakra-ui/icons'
+import { useSelector } from 'react-redux';
+
 import { Hero } from '../components/Hero'
 import { Container } from '../components/Container'
-import { Main } from '../components/Main'
+import { Sidebar } from '../components/Sidebar'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { CTA } from '../components/CTA'
-import { Footer } from '../components/Footer'
+import {
+  Box,
+  Grid,
+  GridItem,
+  Heading
+} from '@chakra-ui/react';
 
-const Index = () => (
-  <Container height="100vh">
-    <Hero />
-    <Main>
-      <Text>
-        Example repository of <Code>Next.js</Code> + <Code>chakra-ui</Code>.
-      </Text>
+import CoinNews from '../components/CoinNews'
 
-      <List spacing={3} my={0}>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink
-            isExternal
-            href="https://chakra-ui.com"
-            flexGrow={1}
-            mr={2}
-          >
-            Chakra UI <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-        <ListItem>
-          <ListIcon as={CheckCircleIcon} color="green.500" />
-          <ChakraLink isExternal href="https://nextjs.org" flexGrow={1} mr={2}>
-            Next.js <LinkIcon />
-          </ChakraLink>
-        </ListItem>
-      </List>
-    </Main>
-
-    <DarkModeSwitch />
-    <Footer>
-      <Text>Next ❤️ Chakra</Text>
-    </Footer>
-    <CTA />
-  </Container>
-)
+const Index = () => {
+  const news = useSelector(state => state.news);
+  return (
+    <Container width="100vw" height="100vh">
+      <DarkModeSwitch />
+      <Hero title={'Crypto Times'} />
+      <Grid
+        templateColumns="repeat(5, 1fr)"
+        gap={2}>
+        <GridItem colSpan={4}>
+          <Box>
+            <Heading>NEWS</Heading>
+          <CoinNews news={news} />
+          </Box>
+        </GridItem>
+        <GridItem colSpan={1}>
+          <Box>
+            <Sidebar />
+          </Box>
+        </GridItem>
+      </Grid>
+    </Container>
+  )
+}
 
 export default Index

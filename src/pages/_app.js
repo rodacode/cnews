@@ -1,19 +1,25 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
+import React from 'react';
+import {wrapper} from '../state/reducers/index';
 
 import theme from '../theme'
 
-function MyApp({ Component, pageProps }) {
+const WrappedApp = ({Component, pageProps}) => {
   return (
-    <ChakraProvider resetCSS theme={theme}>
-      <ColorModeProvider
-        options={{
-          useSystemColorMode: true,
-        }}
-      >
-        <Component {...pageProps} />
-      </ColorModeProvider>
-    </ChakraProvider>
+    <>
+        <ChakraProvider resetCSS theme={theme}>
+          <ColorModeProvider
+            options={{
+              useSystemColorMode: true,
+            }}
+          >
+            <Component {...pageProps} />
+          </ColorModeProvider>
+        </ChakraProvider>
+    </>
   )
 }
 
-export default MyApp
+export default wrapper.withRedux(WrappedApp);
+
+
