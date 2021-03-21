@@ -12,7 +12,8 @@ const Index = () => {
       <Head>
         <title>The Crypto Road</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="Crypto and Bitcoin news, price and traders tricks. Enjoy the crypto road to the descentralize land"/>
+        <meta name="description" content="Crypto and Bitcoin news, price and traders tricks. Enjoy the crypto road to the descentralize land" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2G7GEHKSN"></script>
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
