@@ -1,6 +1,6 @@
 
-import {createStore, compose} from 'redux';
-import {createWrapper, HYDRATE} from 'next-redux-wrapper';
+import { createStore, compose } from 'redux';
+import { createWrapper, HYDRATE } from 'next-redux-wrapper';
 
 import {
   LOAD_USER_DATA_PENDING,
@@ -11,12 +11,8 @@ import {
 
 export const initialState = {
   user: [],
-  news:[
-    {title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"},
-    {title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"},
-    {title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"},
-    {title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"}
-  ],
+  news: [
+    { "id": "26934513", "guid": "https://cointelegraph.com/news/nigeria-s-central-bank-not-discouraging-people-from-trading-crypto-says-governor", "published_on": 1616352265, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "Nigeria's central bank not discouraging people from trading crypto, says governor", "url": "https://cointelegraph.com/news/nigeria-s-central-bank-not-discouraging-people-from-trading-crypto-says-governor", "source": "cointelegraph", "body": "The governor of the Central Bank of Nigeria has seemingly softened his stance on crypto for individuals, if not banks.", "tags": "regulation|bitcoin regulation|central bank|africa|nigeria", "categories": "Fiat|Regulation|Trading", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934505", "guid": "https://cointelegraph.com/news/selfkey-key-gains-450-after-defi-pivot-and-data-management-upgrades", "published_on": 1616348849, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "SelfKey (KEY) gains 450% after DeFi pivot and data management upgrades", "url": "https://cointelegraph.com/news/selfkey-key-gains-450-after-defi-pivot-and-data-management-upgrades", "source": "cointelegraph", "body": "The rollout of new identity management platforms and a pivot toward DeFi appear to have triggered a 450% in the price of SelfKey. ", "tags": "Identity|Identification", "categories": "Trading", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934478", "guid": "https://cointelegraph.com/news/actionists-reinventing-art-as-it-ever-was-so-shall-it-ever-be-even-in-crypto", "published_on": 1616343180, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "Actionists reinventing art: As it ever was, so shall it ever be (even in crypto)", "url": "https://cointelegraph.com/news/actionists-reinventing-art-as-it-ever-was-so-shall-it-ever-be-even-in-crypto", "source": "cointelegraph", "body": "Tokenizing art could make paintings a more liquid vehicle for investment, engaging people who don’t have access to the high-end art market.", "tags": "Nonfungible Tokens|Art|Tokens|Auction", "categories": "Market|ICO", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934467", "guid": "https://cointelegraph.com/news/bitcoin-s-new-use-case-a-report-card-for-how-the-us-handles-the-dollar", "published_on": 1616339640, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "Bitcoin’s new use case? A report card for how the US handles the dollar", "url": "https://cointelegraph.com/news/bitcoin-s-new-use-case-a-report-card-for-how-the-us-handles-the-dollar", "source": "cointelegraph", "body": "An important new role for the world’s first cryptocurrency as an inflation gauge — or just another fantasy of Bitcoin maximalists?", "tags": "United States|Federal Reserve|Dollar", "categories": "Fiat|BTC", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934458", "guid": "https://cointelegraph.com/news/xrp-purchasers-back-ripple-arguing-that-it-is-not-a-security", "published_on": 1616335620, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "XRP purchasers back Ripple, arguing that it is not a security", "url": "https://cointelegraph.com/news/xrp-purchasers-back-ripple-arguing-that-it-is-not-a-security", "source": "cointelegraph", "body": "Breaking down the ongoing SEC v. Ripple case clarifies the crucial meaning of it for the whole crypto industry.", "tags": "", "categories": "XRP|Regulation", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934444", "guid": "https://cointelegraph.com/news/ethereum-network-in-a-fee-spin-can-the-berlin-upgrade-save-the-day", "published_on": 1616329689, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "Ethereum network in a fee spin: Can the Berlin upgrade save the day?", "url": "https://cointelegraph.com/news/ethereum-network-in-a-fee-spin-can-the-berlin-upgrade-save-the-day", "source": "cointelegraph", "body": "The upcoming Berlin update contains EIPs aimed at reducing transaction costs, but it may not provide a long-term solution.", "tags": "Proof-of-Stake|Ethereum 2.0|layer2|Fees", "categories": "ETH", "upvotes": "0", "downvotes": "1", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }, { "id": "26934438", "guid": "https://cointelegraph.com/news/bitcoin-price-slides-5-after-failing-to-break-60k-here-s-why", "published_on": 1616320208, "imageurl": "https://images.cryptocompare.com/news/default/cointelegraph.png", "title": "Bitcoin price slides 5% after failing to break $60K — Here's why", "url": "https://cointelegraph.com/news/bitcoin-price-slides-5-after-failing-to-break-60k-here-s-why", "source": "cointelegraph", "body": "BTC dropped below $56,000 on Sunday as several bearish signs emerged. ", "tags": "bitcoin|BTC price|bitfinex|treasury yields", "categories": "BTC|Trading|Exchange", "upvotes": "0", "downvotes": "0", "lang": "EN", "source_info": { "name": "CoinTelegraph", "lang": "EN", "img": "https://images.cryptocompare.com/news/default/cointelegraph.png" } }],
   coins: [
     {
       "id": "bitcoin",
@@ -303,52 +299,131 @@ export const initialState = {
       "last_updated": "2021-03-20T21:11:28.129Z"
     }
   ],
-  selectedCoins:[
+  trendingCoins: [
+    {
+      "item": {
+        "id": "ecomi",
+        "name": "ECOMI",
+        "symbol": "OMI",
+        "market_cap_rank": 61,
+        "thumb": "https://assets.coingecko.com/coins/images/4428/thumb/ECOMI.png?1557928886",
+        "large": "https://assets.coingecko.com/coins/images/4428/large/ECOMI.png?1557928886",
+        "score": 0
+      }
+    },
+    {
+      "item": {
+        "id": "ethernity-chain",
+        "name": "Ethernity Chain",
+        "symbol": "ERN",
+        "market_cap_rank": 221,
+        "thumb": "https://assets.coingecko.com/coins/images/14238/thumb/ethernity_logo.png?1615189750",
+        "large": "https://assets.coingecko.com/coins/images/14238/large/ethernity_logo.png?1615189750",
+        "score": 1
+      }
+    },
+    {
+      "item": {
+        "id": "wax",
+        "name": "WAX",
+        "symbol": "WAXP",
+        "market_cap_rank": 144,
+        "thumb": "https://assets.coingecko.com/coins/images/1372/thumb/WAX_Coin_Tickers_P_512px.png?1602812260",
+        "large": "https://assets.coingecko.com/coins/images/1372/large/WAX_Coin_Tickers_P_512px.png?1602812260",
+        "score": 2
+      }
+    },
+    {
+      "item": {
+        "id": "harmony",
+        "name": "Harmony",
+        "symbol": "ONE",
+        "market_cap_rank": 67,
+        "thumb": "https://assets.coingecko.com/coins/images/4344/thumb/Y88JAze.png?1565065793",
+        "large": "https://assets.coingecko.com/coins/images/4344/large/Y88JAze.png?1565065793",
+        "score": 3
+      }
+    },
+    {
+      "item": {
+        "id": "chiliz",
+        "name": "Chiliz",
+        "symbol": "CHZ",
+        "market_cap_rank": 37,
+        "thumb": "https://assets.coingecko.com/coins/images/8834/thumb/Chiliz.png?1561970540",
+        "large": "https://assets.coingecko.com/coins/images/8834/large/Chiliz.png?1561970540",
+        "score": 4
+      }
+    },
+    {
+      "item": {
+        "id": "vesper-finance",
+        "name": "Vesper Finance",
+        "symbol": "VSP",
+        "market_cap_rank": 325,
+        "thumb": "https://assets.coingecko.com/coins/images/13527/thumb/vesper_logo.jpg?1609399927",
+        "large": "https://assets.coingecko.com/coins/images/13527/large/vesper_logo.jpg?1609399927",
+        "score": 5
+      }
+    },
+    {
+      "item": {
+        "id": "chain-games",
+        "name": "Chain Games",
+        "symbol": "CHAIN",
+        "market_cap_rank": 292,
+        "thumb": "https://assets.coingecko.com/coins/images/12257/thumb/chain-logo-centered-500x500.png?1599617244",
+        "large": "https://assets.coingecko.com/coins/images/12257/large/chain-logo-centered-500x500.png?1599617244",
+        "score": 6
+      }
+    }
+  ],
+  selectedCoins: [
     {
       id: "1",
       name: "🦄 Uniswap",
-      tokenName:"UNI",
-      imgSrc:"https://images.ctfassets.net/hfgyig42jimx/4vKMff1E9iOT9hcOMHzIOy/223563ab1f6a9c6e80012301e0118462/Uniswap_banner.png",
-      tokenName:"UNI",
-      coinGeckoId:"uniswap",
+      tokenName: "UNI",
+      imgSrc: "https://images.ctfassets.net/hfgyig42jimx/4vKMff1E9iOT9hcOMHzIOy/223563ab1f6a9c6e80012301e0118462/Uniswap_banner.png",
+      tokenName: "UNI",
+      coinGeckoId: "uniswap",
       description: "UNI is the governance token for Uniswap, an Automated Market Market DEX on the Ethereum blockchain. The UNI token allows token holders to participate in the governance of the protocol. Key decisions such as usage of the treasury or future upgrades can be decided through a governance vote.El precio de Uniswap (UNI) hoy es de 20,31 US$ con un volumen de comercio de 1.551.909.834 US$ en 24 horas. El precio ha subido a 0.9% en las últimas 24 horas. Tiene una cantidad en circulación de 300 millones monedas y una cantidad máxima de 1 mil millones monedas. Uniswap (v2) es el mercado más activo que está realizando operaciones con esta divisa.",
-      founders: [{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg",twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/",tweeterAlias:"@shshaha"}],
-      team:[{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/"}],
-      newsList:[{title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"}],
-      tweeterAlias:"Uniswap"
+      founders: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/", tweeterAlias: "@shshaha" }],
+      team: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/" }],
+      newsList: [{ title: "DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text: "Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url: "https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img: "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg" }],
+      tweeterAlias: "Uniswap"
     },
     {
       id: "2",
       name: "Cardano",
-      tokenName:"CAD",
-      imgSrc:"https://s3.cointelegraph.com/storage/uploads/view/a7872fcc56858227ffa183256a5d55e1.png",
+      tokenName: "CAD",
+      imgSrc: "https://s3.cointelegraph.com/storage/uploads/view/a7872fcc56858227ffa183256a5d55e1.png",
       description: "A great coin founded by blabalbalabalbalab hahaha ahaha ahhaha",
-      founders: [{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg",twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/",tweeterAlias:"@shshaha"}],
-      team:[{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/"}],
-      newsList:[{title:"El dia de la marmota", text:"going foward flfld eklekelkskajkajakj aakjakjakaj akjkjrrosdn slkjrudhe sljdr fmdn dnddd ss sksjs  ssj"}],
-      tweeterAlias:"@shshaha"
+      founders: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/", tweeterAlias: "@shshaha" }],
+      team: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/" }],
+      newsList: [{ title: "El dia de la marmota", text: "going foward flfld eklekelkskajkajakj aakjakjakaj akjkjrrosdn slkjrudhe sljdr fmdn dnddd ss sksjs  ssj" }],
+      tweeterAlias: "@shshaha"
     },
     {
       id: "3",
       name: "Polka Dot",
-      tokenName:"DOT",
-      imgSrc:"https://images.ctfassets.net/hfgyig42jimx/4vKMff1E9iOT9hcOMHzIOy/223563ab1f6a9c6e80012301e0118462/Uniswap_banner.png",
+      tokenName: "DOT",
+      imgSrc: "https://images.ctfassets.net/hfgyig42jimx/4vKMff1E9iOT9hcOMHzIOy/223563ab1f6a9c6e80012301e0118462/Uniswap_banner.png",
       description: "A great coin founded by blabalbalabalbalab hahaha ahaha ahhaha",
-      founders: [{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg",twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/",tweeterAlias:"@shshaha"}],
-      team:[{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/"}],
-      newsList:[{title:"DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text:"Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url:"https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img:"https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg"}],
-      tweeterAlias:"@shshaha"
+      founders: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/", tweeterAlias: "@shshaha" }],
+      team: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/" }],
+      newsList: [{ title: "DeFi wars heat up as Curve Finance TVL hits $3.99B, surpassing Uniswap", text: "Curve Finance has surpassed Uniswap’s total value locked, a sign that competition between DeFi protocols is heating up.", url: "https://cointelegraph.com/news/defi-wars-heat-up-as-curve-finance-tvl-hits-3-99b-surpassing-uniswap", img: "https://images.cointelegraph.com/images/1434_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjEtMDIvY2ZhNzcyYjItYmIyOC00ZDMwLWJkNWMtOGQyN2UyNWIxYWI0LmpwZw==.jpg" }],
+      tweeterAlias: "@shshaha"
     },
     {
       id: "4",
       name: "BITCOIN",
-      tokenName:"BTC",
-      imgSrc:"https://logos-marcas.com/wp-content/uploads/2020/08/Bitcoin-Logo.png",
+      tokenName: "BTC",
+      imgSrc: "https://logos-marcas.com/wp-content/uploads/2020/08/Bitcoin-Logo.png",
       description: "A great coin founded by blabalbalabalbalab hahaha ahaha ahhaha",
-      founders: [{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg",twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/",tweeterAlias:"@shshaha"}],
-      team:[{name: "George Carlin", imgSrc:"https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter:"https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/"}],
-      newsList:[{title:"El dia de la marmota", text:"going foward flfld eklekelkskajkajakj aakjakjakaj akjkjrrosdn slkjrudhe sljdr fmdn dnddd ss sksjs  ssj"}],
-      tweeterAlias:"@shshaha"
+      founders: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/", tweeterAlias: "@shshaha" }],
+      team: [{ name: "George Carlin", imgSrc: "https://cdn.business2community.com/wp-content/uploads/2014/04/profile-picture-300x300.jpg", twitter: "https://twitter.com/3984239/", linkedin: "https://linkedin.com/2982928/" }],
+      newsList: [{ title: "El dia de la marmota", text: "going foward flfld eklekelkskajkajakj aakjakjakaj akjkjrrosdn slkjrudhe sljdr fmdn dnddd ss sksjs  ssj" }],
+      tweeterAlias: "@shshaha"
     }
   ],
 
@@ -389,4 +464,4 @@ const devtools = (process.browser && window.__REDUX_DEVTOOLS_EXTENSION__)
 const makeStore = context => createStore(reducer, initialState, compose(devtools));
 
 // export an assembled wrapper
-export const wrapper = createWrapper(makeStore, {debug: true});
+export const wrapper = createWrapper(makeStore, { debug: true });

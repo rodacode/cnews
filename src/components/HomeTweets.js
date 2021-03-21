@@ -5,8 +5,7 @@ import {
 
 const HomeTweets = ({user}) => {
   return (
-    <>
-      <Box>
+      <Box boxShadow="dark-lg" rounded="md">
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName={user}
@@ -14,7 +13,6 @@ const HomeTweets = ({user}) => {
             theme="dark"
           />
       </Box>
-    </>
   );
 };
 

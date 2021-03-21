@@ -1,18 +1,18 @@
 import { useSelector } from 'react-redux';
 import { Box, Text, Heading, Image } from '@chakra-ui/react';
 
-const HomeTutorials = () => {
-    const tutorials = useSelector(state => state.news);
+const HomeNFT = () => {
+    const nftNews = useSelector(state => state.news);
 
     return (
         <Box pt="12" pb="20" m="4" mt="20">
-            <Box d="flex" justifyContent="center" textAlign="center">
-                <Heading mt="6" mb="6" textAlign="center">TUTORIALS</Heading>
+            <Box  d="flex" justifyContent="center" textAlign="center">
+                <Heading mt="6" mb="6" textAlign="center">NFT ZONE</Heading>
             </Box>
             <Box d="flex" flexWrap="wrap" justifyContent="space-around" m="4">
 
-                {tutorials &&
-                    tutorials.map(tutorial => {
+                {nftNews &&
+                    nftNews.map(tutorial => {
                         return (
                             <Box
                                 key={tutorial.id}
@@ -21,16 +21,17 @@ const HomeTutorials = () => {
                                 borderRadius="lg"
                                 overflow="hidden"
                                 m="2"
+                                bgGradient="linear(to-t, green.200, pink.500)"
                                 boxShadow="dark-lg"
                             >
-                                <Box
-                                    bgGradient="linear(to-t, green.200, pink.500)">
-                                    <Heading p="2" mb="0" as="h4" size="md">
-                                        <strong>{tutorial.title}</strong>
-                                    </Heading>
-                                </Box>
-                                <Box d="flex" p="6" bg="#fff">
-                                    <Box>
+                                <Heading m="5" mb="0" as="h4" size="md">
+                                    <strong>{tutorial.title}</strong>
+                                </Heading>
+                                <Box d="flex" p="6">
+                                    <Box w={1 / 3}>
+                                        <Image src={tutorial.img} alt="uni news" />
+                                    </Box>
+                                    <Box w={2 / 3}>
                                         <Text m="5" mt="0">
                                             {tutorial.text}
                                         </Text>
@@ -48,4 +49,4 @@ const HomeTutorials = () => {
     );
 };
 
-export default HomeTutorials;
+export default HomeNFT;
