@@ -2,7 +2,7 @@ import { Box, Text, Heading, Image } from '@chakra-ui/react';
 
 const CoinNews = ({ news }) => {
   return (
-    <>
+    <Box d="flex" flexWrap="wrap" m="4">
       {news &&
         news.map(news => {
           return (
@@ -12,6 +12,7 @@ const CoinNews = ({ news }) => {
               borderWidth="1px"
               borderRadius="lg"
               overflow="hidden"
+              m="2"
             >
               <Heading m="5" mb="0" as="h4" size="md">
                 <strong>{news.title}</strong>
@@ -32,7 +33,7 @@ const CoinNews = ({ news }) => {
             </Box>
           );
         })}
-    </>
+    </Box>
   );
 };
 

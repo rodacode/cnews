@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap');
+
+.title{
+    font-family: 'Kalam', cursive !important;
+}
+
+.title__container{
+position: relative;
+}
+
+.title__road{
+    position: absolute;
+    right: 0;
+    bottom: 5px;;
+}

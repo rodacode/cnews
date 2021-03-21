@@ -1,12 +1,13 @@
-import { Flex, Heading, Text } from '@chakra-ui/react'
+import { Flex, Heading } from '@chakra-ui/react'
+import TopTenCoins from './TopTenCoins'
 
 export const Sidebar = () => (
   <>
     <Flex justifyContent="center" maxW={'15vv'}>
-      <Heading>Sidebar</Heading>
+      <Heading>Top 10 Coins</Heading>
     </Flex>
     <Flex justifyContent="center">
-      <Text>All news about crypto coins, altcoins, nfts and descentralization</Text>
+        <TopTenCoins />
     </Flex>
   </>
 

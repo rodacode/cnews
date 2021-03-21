@@ -1,8 +1,8 @@
 import { ChakraProvider, ColorModeProvider } from '@chakra-ui/react'
 import React from 'react';
 import {wrapper} from '../state/reducers/index';
-
 import theme from '../theme'
+import './index.css'
 
 const WrappedApp = ({Component, pageProps}) => {
   return (
