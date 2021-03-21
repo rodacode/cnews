@@ -7,7 +7,7 @@ const HomeNFT = () => {
     return (
         <Box pt="12" pb="20" m="4" mt="20">
             <Box  d="flex" justifyContent="center" textAlign="center">
-                <Heading mt="6" mb="6" textAlign="center">NFT ZONE</Heading>
+                <Heading mt="6" mb="6" textAlign="center">NFT ZONE (cooming soon)</Heading>
             </Box>
             <Box d="flex" flexWrap="wrap" justifyContent="space-around" m="4">
 
