@@ -14,6 +14,17 @@ const Index = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="description" content="Crypto and Bitcoin news, price and traders tricks. Enjoy the crypto road to the descentralize land" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2G7GEHKSN"></script>
+        <script dangerouslySetInnerHTML={
+          {
+            __html: `
+          window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments)}
+  gtag('js', new Date());
+
+  gtag('config', 'G-G2G7GEHKSN');
+  `}
+        }>
+        </script>
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
