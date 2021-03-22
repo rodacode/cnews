@@ -3,12 +3,10 @@ import Navbar from "../components/NavBar"
 import HomeContent from '../components/HomeContent'
 import useSticky from "../hooks/useSticky.js"
 import Head from 'next/head'
-import ReactGA from 'react-ga';
 
 const Index = () => {
   const { isSticky, element } = useSticky()
-  ReactGA.initialize('266392666');
-  ReactGA.pageview(window.location.pathname + window.location.search);
+
   return (
     <>
       <Head>
