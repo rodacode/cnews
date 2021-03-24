@@ -10,7 +10,7 @@ const HeaderHero = () => (
             </Box>
         </Flex>
         <Flex justifyContent="center">
-            <Text>All news about crypto coins, altcoins, nfts and descentralization</Text>
+            <Text>All news about Bitcoin, crypto, altcoins, nfts and descentralization</Text>
         </Flex>
     </Box>
 )

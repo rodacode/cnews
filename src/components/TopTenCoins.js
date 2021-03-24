@@ -1,10 +1,9 @@
 import React, {useState, useEffect} from 'react';
-import { Flex, Box, Text, Image } from '@chakra-ui/react';
+import { Flex, Image } from '@chakra-ui/react';
 import {
     Table,
     Thead,
     Tbody,
-    Tfoot,
     Tr,
     Th,
     Td,
@@ -45,8 +44,8 @@ const TopTenCoins = () => {
                                 <Td>{coin.symbol.toUpperCase()}</Td>
                                 <Td isNumeric>{coin.current_price} US$</Td>
                                 { Math.sign(coin.price_change_percentage_24h) === -1 ?
-                                    <Td color="red">{coin.price_change_percentage_24h} %</Td> :
-                                    <Td color="green">{coin.price_change_percentage_24h} %</Td>
+                                    <Td color="red">{coin.price_change_percentage_24h.toFixed(2)} %</Td> :
+                                    <Td color="green">{coin.price_change_percentage_24h.toFixed(2)} %</Td>
                                 }
                             </Tr>
                         )
