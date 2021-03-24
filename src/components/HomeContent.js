@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { Header } from './Header'
 import { Container } from './Container'
@@ -22,7 +23,6 @@ import HomeADAData from './HomeADAData'
 
 const HomeContent = ({ element }) => {
     const news = useSelector(state => state.news);
-
     return (
         <Container width="100vw" minH="100vh" >
             <Box>

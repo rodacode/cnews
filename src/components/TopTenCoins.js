@@ -31,7 +31,7 @@ const TopTenCoins = () => {
                     <Tr>
                         <Th></Th>
                         <Th>Coin</Th>
-                        <Th >Price</Th>
+                        <Th textAlign="center">Price</Th>
                         <Th >Last 24 hs.</Th>
                     </Tr>
                 </Thead>
