@@ -1,7 +1,7 @@
 import { Box, Flex, Heading, Text } from '@chakra-ui/react'
 
 const HeaderHero = () => (
-    <Box >
+    <Box mt="6">
         <Flex justifyContent="center">
             <Box className="title__container">
                 <Heading fontSize="2vw">The</Heading>
