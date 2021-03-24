@@ -1,9 +1,14 @@
+import Link from 'next/link'
 import { Box, Image } from '@chakra-ui/react';
 
-const AdBanner = ({imageUrl}) => {
+const AdBanner = ({ imageUrl, link="#" }) => {
     return (
         <Box p="8">
-            <Image src={imageUrl} />
+            <Link href={link}>
+                <a>
+                    <Image src={imageUrl} />
+                </a>
+            </Link>
         </Box>
     )
 }
