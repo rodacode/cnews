@@ -1,14 +1,18 @@
 import Link from 'next/link'
-import Header from '../components/Header'
-
+import HeaderHero from '../components/Header'
+import {
+    Box
+} from '@chakra-ui/react';
 export default function FourOhFour() {
-  return <>
-    <Header />
-    <h1>404 - Page Not Found</h1>
-    <Link href="/">
-      <a>
-        Go back home
+    return <>
+        <Box textAlign="center">
+            <HeaderHero />
+            <h1>404 - Page Not Found</h1>
+            <Link href="/">
+                <a>
+                    Go back home
       </a>
-    </Link>
-  </>
+            </Link>
+        </Box>
+    </>
 }

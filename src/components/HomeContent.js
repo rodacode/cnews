@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Header } from './Header'
+import Header from './Header'
 import { Container } from './Container'
 import { Sidebar } from './Sidebar'
 import {
