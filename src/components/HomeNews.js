@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Box, Text, Heading, Image } from '@chakra-ui/react';
-import useFetch from '../hooks/useFetch';
+import { Box } from '@chakra-ui/react';
+import NewsCard from './NewsCard';
+import HomeNewsHighlights from './HomeNewsHighlights';
 
 const HomeNews = () => {
   const [news, setNews] = useState()
@@ -8,7 +9,7 @@ const HomeNews = () => {
 
   useEffect(() => {
     try {
-      fetch(url).then((res)=>res.json()).then((response)=>{
+      fetch(url).then((res) => res.json()).then((response) => {
         setNews(response.Data);
       })
     } catch (error) {
@@ -18,38 +19,15 @@ const HomeNews = () => {
 
   return (
     <Box d="flex" flexWrap="wrap" justifyContent="center" m="4">
+      <HomeNewsHighlights />
       {news &&
-        news.slice(0,6).map(news => {
+        news.slice(0, 4).map(news => {
           return (
-            <Box
-              key={news.id}
-              maxW="sm"
-              borderWidth="1px"
-              borderRadius="lg"
-              overflow="hidden"
-              bg="#fff"
-              m="3">
-              <Box borderWidth="1px"
-                overflow="hidden"
-                bgGradient="linear(to-t, blue.200, green.500)">
-                <Heading m="5" mb="0" as="h4" size="md">
-                  <strong>{news.title}</strong>
-                </Heading>
-              </Box>
-              <Box d="flex" flexDirection="column">
-                <Box>
-                  <Image boxSize="100%" src={news.imageurl} alt="uni news" />
-                </Box>
-                <Box>
-                  <Text m="5" mt="0" color="#000">
-                    {news.body}
-                  </Text>
-                </Box>
-              </Box>
-              <Box m="5" as="a" href={news.url}>
-                Leer más...
-              </Box>
-            </Box>
+            <NewsCard 
+              title={news.title}
+              description={news.body}
+              url={news.url}
+              imageUrl={news.imageurl} />
           );
         })}
     </Box >
