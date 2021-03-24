@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://thecryptoroad.com/sitemap.xml
