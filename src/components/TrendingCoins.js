@@ -29,9 +29,11 @@ const TrendingCoins = () => {
     return (
         <Box boxShadow="dark-lg" color="#000" bg="#f6f6f6" p="10" m="4" borderRadius="50">
             <Flex flexDirection='column' flexWrap="wrap">
-
-                <Heading textAlign="center">Trending coins on Coingecko</Heading>
-                { !isLoading ?
+                <Box d="flex" flexDirection="row" justifyContent="center" m="10">
+                    <Heading textAlign="center">Trending coins on Coingecko </Heading>
+                    <Image  ml="4" boxSize="50px" src="./images/coingecko_logo.webp" />
+                </Box>
+                {!isLoading ?
                     <>
                         <Table variant="simple">
                             <Thead>
