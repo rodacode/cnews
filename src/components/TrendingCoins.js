@@ -8,11 +8,10 @@ import {
     Th,
     Td,
 } from "@chakra-ui/react"
-import TopTenCoinsSkeleton from './TopTenCoinsSkeleton'
 
 const TrendingCoins = () => {
     const [coins, setCoins] = useState()
-    const [isLoading, setIsLoading] = useState()
+    const [isLoading, setIsLoading] = useState(true)
     const url = 'https://api.coingecko.com/api/v3/search/trending'
 
     useEffect(() => {
@@ -32,7 +31,7 @@ const TrendingCoins = () => {
             <Flex flexDirection='column' flexWrap="wrap">
 
                 <Heading textAlign="center">Trending coins on Coingecko</Heading>
-                {isLoading ?
+                { !isLoading ?
                     <>
                         <Table variant="simple">
                             <Thead>

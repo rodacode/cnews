@@ -24,7 +24,7 @@ const generateSitemap = async () => {
       // Remove the word index from route
       const route = path === '/index' ? '' : path;
       // Build url portion of sitemap.xml
-      return `<url><loc>https://codebycorey.com${route}</loc></url>`;
+      return `<url><loc>https://thecryptoroad.com${route}</loc></url>`;
     })
     .join('');
 
