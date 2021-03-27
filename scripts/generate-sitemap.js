@@ -22,7 +22,7 @@ const generateSitemap = async () => {
         .replace(/(.tsx|.ts)/, '')
         .replace('.mdx', '');
       // Remove the word index from route
-      const route = path === '/index' ? '' : path;
+      const route = path === '/index' ? '/' : path;
       // Build url portion of sitemap.xml
       return `<url><loc>https://thecryptoroad.com${route}</loc></url>`;
     })
