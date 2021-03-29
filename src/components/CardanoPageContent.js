@@ -14,7 +14,7 @@ const CardanoPageContent = ({ element }) => {
         <Container width="100vw" minH="100vh" >
             <Header />
 
-            <Box minW="100vw" ref={element}>
+            <Box minW="100vw">
                 <HomeAdaData />
                 <HomeTweetsContainer />
                 <HomeBtcNews />
