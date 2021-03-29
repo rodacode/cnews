@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector } from 'react-redux';
 import Header from './Header'
 import { Container } from './Container'
@@ -14,11 +14,9 @@ import HomeNews from './HomeNews'
 import HomeTweetsContainer from './HomeTweetsContainer'
 import TrendingCoins from './TrendingCoins'
 
-import HomeTutorials from './HomeTutorials'
+import HomeTestimonials from './HomeTestimonials'
 import HomeNFT from './HomeNFT'
-import HomeBtcData from './HomeBtcData'
-import HomeBtcNews from './HomeBtcNews'
-import HomeADAData from './HomeADAData'
+import Footer from './Footer'
 
 
 const HomeContent = ({ element }) => {
@@ -50,11 +48,10 @@ const HomeContent = ({ element }) => {
                 </Box>
 
                 <Box minW="100vw">
-                    <HomeTweetsContainer />
-                    <HomeBtcData />
                     <TrendingCoins />
-                    <HomeBtcNews />
-                    <HomeADAData />
+                    <HomeTestimonials />
+                    <HomeTweetsContainer />
+                    <Footer />
                 </Box>
             </Box>
         </Container>

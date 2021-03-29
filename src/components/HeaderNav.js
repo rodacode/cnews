@@ -10,29 +10,41 @@ const HeaderNav = () => (
                     fontWeight={500}
                     _hover={{
                         textDecoration: 'none',
-                    }}>
-                    Coin News
-        </Link>
+                    }}
+                    href="/">
+                    HOME
+                </Link>
                 <Link
                     p={2}
                     fontSize={'sm'}
                     fontWeight={500}
                     _hover={{
                         textDecoration: 'none',
-                    }}>
-                    Altcoins selection
-        </Link>
+                    }}
+                    href="/bitcoin">
+                    BITCOIN
+                </Link>
                 <Link
                     p={2}
                     fontSize={'sm'}
                     fontWeight={500}
                     _hover={{
                         textDecoration: 'none',
-                    }}>
-                    CoinParator
-        </Link>
+                    }}
+                    href="/altcoins">
+                    ALTCOINS
+                </Link>
+                <Link
+                    p={2}
+                    fontSize={'sm'}
+                    fontWeight={500}
+                    _hover={{
+                        textDecoration: 'none',
+                    }}
+                    href="/cardano">
+                    CARDANO
+                </Link>
             </Stack>
-
         </Flex>
     </Box>
 

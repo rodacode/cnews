@@ -7,4 +7,13 @@
     <url>
         <loc>https://thecryptoroad.com</loc>
     </url>
+        <url>
+        <loc>https://thecryptoroad.com/bitcoin</loc>
+    </url>
+        <url>
+        <loc>https://thecryptoroad.com/altcoins</loc>
+    </url>   
+         <url>
+        <loc>https://thecryptoroad.com/cardano</loc>
+    </url>
 </urlset>

@@ -218,27 +218,20 @@ const MobileNavItem = ({ label, children, href }) => {
 
 const NAV_ITEMS = [
     {
-        label: 'Coin News',
-        children: [
-            {
-                label: 'Bitcoin',
-                subLabel: 'Trending Design to inspire you',
-                href: '#',
-            },
-            {
-                label: 'Altcoins',
-                subLabel: 'Up-and-coming Designers',
-                href: '#',
-            },
-        ],
+        label: 'Home',
+        href: '/'
     },
     {
-        label: 'Tutorials',
+        label: 'Bitcoin',
+        href: '/bitcoin',
+    },
+    {
+        label: 'Altcoins',
         children: [
             {
-                label: 'Blockchain',
-                subLabel: 'What is a blockchain?',
-                href: '#',
+                label: 'Trending',
+                subLabel: 'Trending Altcoins',
+                href: '/altcoins',
             },
             {
                 label: 'Defi',
@@ -248,11 +241,7 @@ const NAV_ITEMS = [
         ],
     },
     {
-        label: 'Altcoins selection',
-        href: '#',
-    },
-    {
-        label: 'About',
-        href: '#',
+        label: 'Cardano',
+        href: '/cardano',
     },
 ];
