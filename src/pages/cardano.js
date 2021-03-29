@@ -1,7 +1,7 @@
 import { Container } from '../components/Container'
 import Navbar from "../components/NavBar"
 import Head from 'next/head'
-import CardanoPageContent from  "../components/BitcoinPageContent"
+import CardanoPageContent from  "../components/CardanoPageContent"
 import useSticky from "../hooks/useSticky.js"
 
 const Cardano = () => {
@@ -17,7 +17,7 @@ const Cardano = () => {
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
-        <CardanoPageContent element={element} />
+        <CardanoPageContent element={element}/>
       </Container>
     </>
   )
