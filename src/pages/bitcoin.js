@@ -17,7 +17,7 @@ const Bitcoin = () => {
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
-        <BitcoinPageContent/>
+        <BitcoinPageContent element={element}/>
       </Container>
     </>
   )
