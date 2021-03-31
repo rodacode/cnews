@@ -3,7 +3,7 @@ import Header from './Header'
 import { Container } from './Container'
 import { Box, Text } from '@chakra-ui/react';
 
-import HomeAdaData from './HomeAdaData'
+import HomeADAData from './HomeADAData'
 import ADATweetsContainer from './ADATweetsContainer'
 import Footer from './Footer'
 
@@ -23,7 +23,7 @@ The Cardano project is different from other blockchain projects as it openly add
  software standards in the industry. 
  </Text>
                 </Box>
-                <HomeAdaData />
+                <HomeADAData />
                 <ADATweetsContainer />
                 <Box mt="6">
                     <iframe src="https://lunarcrush.com/widgets/influencers?filter_string=ADA&interval=1 Week&theme=dark" id="candlestick" frameBorder="0" border="0" cellSpacing="0" scrolling="no" Style="width: 100%; height: 600px;" />
