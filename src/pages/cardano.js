@@ -13,7 +13,7 @@ const Cardano = () => {
       <Head>
         <title>The Crypto Road</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="News about Bitcoin. Bitcoin price" />
+        <meta name="description" content="✅ News about Bitcoin. Bitcoin price" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2G7GEHKSN"></script>
       </Head>
       <Container width="100vw" minH="100vh">
