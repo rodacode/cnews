@@ -4,7 +4,7 @@ const HeaderHero = () => (
     <Box mt="6">
         <Flex justifyContent="center">
             <Box className="title__container">
-                <Heading fontSize="2vw">The</Heading>
+                <Heading fontSize="2vw" className="title__the">The</Heading>
                 <Heading as="h1" className="title" fontSize="10vw">Crypto</Heading>
                 <Heading className="title__road" fontSize="2vw">road</Heading>
             </Box>

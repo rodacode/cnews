@@ -21,10 +21,11 @@ const Header = () => (
         </Box>
       </Box>
       <Box width={["100%", "100%", 1 / 3]}>
-        <DarkModeSwitch />
         <Box d="flex" alignItems="center" mt={["2", "14"]} justifyContent="center" flexDirection="column">
           <Text textAlign="center">Follow us on:</Text>
           <SocialIcons />
+          <DarkModeSwitch />
+
         </Box>
       </Box>
     </Box>

@@ -6,12 +6,16 @@
 
 .title__container{
 position: relative;
+font-family: 'Kalam', cursive !important;
 }
-
+.title__the{
+  font-family: 'Kalam', cursive !important;
+}
 .title__road{
     position: absolute;
     right: 0;
-    bottom: 5px;;
+    bottom: 5px;
+    font-family: 'Kalam', cursive !important;
 }
 
 .navbar {

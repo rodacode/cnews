@@ -7,7 +7,7 @@ const Footer = () => {
             <Box mt="6">
                 <Flex justifyContent="center">
                     <Box className="title__container">
-                        <Heading fontSize="1vw">The</Heading>
+                        <Heading fontSize="1vw" className="title__the">The</Heading>
                         <Heading as="h1" className="title" fontSize="4vw">Crypto</Heading>
                         <Heading className="title__road" fontSize="1vw">road</Heading>
                     </Box>

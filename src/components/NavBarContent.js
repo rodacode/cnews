@@ -52,9 +52,9 @@ export default function NavBarContent() {
                         aria-label={'Toggle Navigation'}
                     />
                 </Flex>
-                <Flex flex={{ base: 1 }} justify={{ base: 'center', md: 'start' }}>
-                    <Image boxSize="80px"
-                        src="./images/crypto_logo.png" />
+                <Flex justify={{ base: 'center', md: 'start' }}>
+                    <Image boxSize="80px" borderRadius="50%"
+                        src="./images/crypto_logo_white.png" />
 
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <DesktopNav />
