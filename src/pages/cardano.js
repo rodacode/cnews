@@ -3,6 +3,7 @@ import Navbar from "../components/NavBar"
 import Head from 'next/head'
 import CardanoPageContent from  "../components/CardanoPageContent"
 import useSticky from "../hooks/useSticky.js"
+import { getDomainLocale } from 'next/dist/next-server/lib/router/router'
 
 const Cardano = () => {
     const { isSticky, element } = useSticky()

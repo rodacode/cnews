@@ -16,7 +16,10 @@ const SocialIcons = () => {
 
                 </Box>
 
-                <Box m="4"><FontAwesomeIcon icon={faYoutube} /></Box>
+                <Link href="https://www.youtube.com/channel/UCG2SZYXxL-jErJ9lW0fO89w"><a target="_blank">
+                    <Box m="4"><FontAwesomeIcon icon={faYoutube} /></Box>
+                </a>
+                </Link>
                 <Link href="https://twitter.com/thecryptoroad?s=09"><a target="_blank">
                     <Box m="4"><FontAwesomeIcon icon={faTwitter} /></Box>
                 </a>
