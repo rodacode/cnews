@@ -38,7 +38,8 @@ export default function NavBarContent() {
                 borderStyle={'solid'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}
-                flexWrap={'wrap'}>
+                flexWrap={'wrap'}
+                justifyContent={'space-around'}>
                 <Flex
                     flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}
@@ -59,11 +60,14 @@ export default function NavBarContent() {
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <DesktopNav />
                     </Flex>
+
                 </Flex>
 
-                <Box d="flex" flexDirection="row">
-                    <DarkModeSwitch />
+                <Box d="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="center">
                     <SocialIcons />
+                    <Box mb="6">
+                        <DarkModeSwitch />
+                    </Box>
                 </Box>
             </Flex>
 
