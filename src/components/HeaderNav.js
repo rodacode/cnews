@@ -44,6 +44,16 @@ const HeaderNav = () => (
                     href="/cardano">
                     CARDANO
                 </Link>
+                <Link
+                    p={2}
+                    fontSize={'sm'}
+                    fontWeight={500}
+                    _hover={{
+                        textDecoration: 'none',
+                    }}
+                    href="/twitter">
+                    ON TWITTER
+                </Link>
             </Stack>
         </Flex>
     </Box>
