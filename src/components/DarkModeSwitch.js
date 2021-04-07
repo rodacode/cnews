@@ -6,8 +6,8 @@ export const DarkModeSwitch = () => {
   return (
     <Switch
       position="relative"
-      top="3rem"
-      right="2rem"
+      top={"5%"}
+      right={"5%"}
       color="green"
       isChecked={isDark}
       onChange={toggleColorMode}
