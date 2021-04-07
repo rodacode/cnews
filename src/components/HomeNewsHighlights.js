@@ -11,9 +11,9 @@ const HomeNewsHighlights = () => {
         url="#"
       />
       <NewsCard
-        title="Coinbase’s IPO is going to be a breakpoint for crypto"
-        description="Coinbase’s IPO could lead to a valuation for the company of around $67.6 billion and will be the first direct listing to take place on the Nasdaq."
-        imageUrl="./images/coinbase-ipo.jpeg"
+        title="Coinbase made more in Q1 2021 than all of 2020"
+        description="The release showed Coinbase made over $1.8 billion (revenue) in Q1 of 2021—an amount greater than the $1.1 billion figure for all of 2020 and nearly ten times the $190 million revenue in the first quarter of last year."
+        imageUrl="./images/coinbase_q1_2021.png"
         url="#"
       />
     </>

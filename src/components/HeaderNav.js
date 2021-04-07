@@ -2,8 +2,8 @@ import { Box, Flex, Stack, Link } from '@chakra-ui/react'
 
 const HeaderNav = () => (
     <Box>
-        <Flex justifyContent="center">
-            <Stack direction={'row'} spacing={4}>
+        <Flex>
+            <Stack justifyContent="center" direction={'row'} spacing={4} flexWrap="wrap">
                 <Link
                     p={2}
                     fontSize={'sm'}
