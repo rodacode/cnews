@@ -10,7 +10,6 @@ export const Sidebar = () => (
     </Flex>
     <Flex justifyContent="center" flexDirection="column">
         <TopTenCoins />
-        <AdBanner imageUrl="./images/binance.jpeg" link='https://www.binance.com/en/register?ref=73085988&utm_campaign=web_share_copy' />
         <AdBanner imageUrl='./images/celsius_network.jpg' />
         <HeaderAd />
     </Flex>
