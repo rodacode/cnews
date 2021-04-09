@@ -9,6 +9,7 @@ const HomeTweets = ({user}) => {
           <TwitterTimelineEmbed
             sourceType="profile"
             screenName={user}
+            onLoad={()=>console.log('onLoad')}
             options={{ height: 600 }}
             theme="dark"
           />
