@@ -13,11 +13,7 @@ const HeaderTwitterTron = () => (
           <HeaderHeroTwitterTron />
         </Box>
       </Box>
-      <Box width={["100%", "100%", 1 / 3]}>
-        <Box d="flex" alignItems="center" mt={["2", "14"]} justifyContent="center" flexDirection="column">
-          <Text textAlign="center">Follow us on:</Text>
-        </Box>
-      </Box>
+
     </Box>
   </>
 
