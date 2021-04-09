@@ -54,9 +54,12 @@ export default function NavBarContent() {
                     />
                 </Flex>
                 <Flex justify={{ base: 'center', md: 'start' }}>
-                    <Image boxSize="80px" borderRadius="50%"
-                        src="./images/crypto_logo_white.png" />
-
+                    <Link href={'/'}>
+                        <a>
+                            <Image boxSize="80px" borderRadius="50%"
+                                src="./images/crypto_logo_white.png" />
+                        </a>
+                    </Link>
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
                         <DesktopNav />
                     </Flex>
@@ -65,9 +68,6 @@ export default function NavBarContent() {
 
                 <Box d="flex" flexDirection="row" flexWrap="wrap" justifyContent="flex-start" alignItems="center">
                     <SocialIcons />
-                    <Box mb="6">
-                        <DarkModeSwitch />
-                    </Box>
                 </Box>
             </Flex>
 
@@ -164,6 +164,9 @@ const MobileNav = () => {
             {NAV_ITEMS.map((navItem) => (
                 <MobileNavItem key={navItem.label} {...navItem} />
             ))}
+            <Box mb="6">
+                <DarkModeSwitch />
+            </Box>
         </Stack>
     );
 };
