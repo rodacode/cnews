@@ -1,7 +1,7 @@
 import React from 'react';
 import Header from './Header'
 import { Container } from './Container'
-import { Box, Text } from '@chakra-ui/react';
+import { Box, Text, Image } from '@chakra-ui/react';
 
 import HomeADAData from './HomeADAData'
 import ADATweetsContainer from './ADATweetsContainer'
@@ -14,15 +14,21 @@ const CardanoPageContent = ({ element }) => {
             <Header />
 
             <Box minW="100vw" ref={element}>
-                <Box p="8">
+            <Box d="flex" flexDirection="row">
+                <Box p="10" width={"50%"}>
                     <Text fontSize="16px">
-Cardano is a blockchain platform. The development started in 2015 and was launched in 2017 
-by Charles Hoskinson, co-founder of Ethereum and BitShares.
-The Cardano project is different from other blockchain projects as it openly addresses the need for regulatory oversight whilst maintaining consumer privacy and protections through an
- innovative software architecture. The protocol features a layered blockchain software stack that is flexible, scalable, and is being developed with the most rigorous academic and commercial 
- software standards in the industry. 
- </Text>
+                        Cardano is a blockchain platform. The development started in 2015 and was launched in 2017
+                        by Charles Hoskinson, co-founder of Ethereum and BitShares.
+                        The Cardano project is different from other blockchain projects as it openly addresses the need for regulatory oversight whilst maintaining consumer privacy and protections through an
+                        innovative software architecture. The protocol features a layered blockchain software stack that is flexible, scalable, and is being developed with the most rigorous academic and commercial
+                        software standards in the industry.
+                     </Text>
                 </Box>
+                <Box p="10" d="flex" justifyContent="center" width={"50%"}>
+                    <Image boxSize="320px" borderRadius="5px" src={'./images/cardano.jpeg'} alt="cardano logo" />
+                </Box>
+                </Box>
+
                 <HomeADAData />
                 <ADATweetsContainer />
                 <Box mt="6">
