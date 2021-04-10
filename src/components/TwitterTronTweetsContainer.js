@@ -3,15 +3,15 @@ import { Box, Heading, Input, InputLeftElement, InputGroup, InputRightElement, B
 import HomeTweets from './HomeTweets'
 
 const TwitterTronTweetsContainer = () => {
-  const [inputValue1, setInputValue1] = useState('DocumentingBTC')
-  const [inputValue2, setInputValue2] = useState('BTC_Archive')
-  const [inputValue3, setInputValue3] = useState('michael_saylor')
-  const [inputValue4, setInputValue4] = useState('whale_alert')
-  const [inputValue5, setInputValue5] = useState('Tronfoundation')
-  const [inputValue6, setInputValue6] = useState('AltcoinDailyio')
-  const [inputValue7, setInputValue7] = useState('danreecer_')
-  const [inputValue8, setInputValue8] = useState('DocumentEther')
-
+  const [inputValue1, setInputValue1] = useState('DiarioOle')
+  const [inputValue2, setInputValue2] = useState('marca')
+  const [inputValue3, setInputValue3] = useState('AS_NBA')
+  const [inputValue4, setInputValue4] = useState('LaLiga')
+  const [inputValue5, setInputValue5] = useState('chamath')
+  const [inputValue6, setInputValue6] = useState('elonmusk')
+  const [inputValue7, setInputValue7] = useState('whale_alert')
+  const [inputValue8, setInputValue8] = useState('DocumentingBTC')
+  
   const handleOnChange1 = (e) => {
     setInputValue1(e.target.value)
   }
@@ -75,7 +75,7 @@ const TwitterTronTweetsContainer = () => {
 
   return (
     <>
-      <Box boxShadow="dark-lg" pt="12" pb="20" bg="#0084F9" borderRadius="50" ml="4" mr="4" mb="30">
+      <Box boxShadow="dark-lg" pt="12" pb="20" borderRadius="50" ml="4" mr="4" mb="30">
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
             <InputGroup mb="6" mt="6">
