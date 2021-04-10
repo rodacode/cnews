@@ -23,9 +23,9 @@ const HomeNews = () => {
   }, [])
 
   return (
-    <>
+    <Box d="flex" flexWrap="wrap" justifyContent="center" m="4">
       { !isLoading ? (
-        <Box d="flex" flexDirection="row" justifyContent="space-around">
+        <>
           <HomeNewsHighlights />
           {news &&
             news.slice(0, 4).map(news => {
@@ -37,10 +37,10 @@ const HomeNews = () => {
                   imageUrl={news.imageurl} />
               );
             })}
-        </Box>
+        </>
       ) : <HomeNewsSkeleton />
       }
-    </>
+    </Box >
   );
 };
 

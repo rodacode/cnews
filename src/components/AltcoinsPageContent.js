@@ -5,7 +5,7 @@ import { Box } from '@chakra-ui/react';
 
 import TrendingCoins from './TrendingCoins'
 import Footer from './Footer'
-
+import AltcoinsNewsHighlights from './AltcoinsNewsHighlights'
 
 const AltcoinsPageContent = ({ element }) => {
     return (
@@ -13,6 +13,7 @@ const AltcoinsPageContent = ({ element }) => {
             <Header />
 
             <Box minW="100vw" ref={element}>
+            <AltcoinsNewsHighlights />
                 <TrendingCoins />
                 <Footer />
             </Box>
