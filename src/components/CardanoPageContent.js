@@ -14,8 +14,8 @@ const CardanoPageContent = ({ element }) => {
             <Header />
 
             <Box minW="100vw" ref={element}>
-                <Box d="flex" flexDirection="row">
-                    <Box p="8" mt="8" width={["100%","50%"]}>
+                <Box width={"80%"} mr="auto" ml="auto" d="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
+                    <Box p="10" mt="8" width={["100%","50%"]}>
                         <Text fontSize="16px">
                             Cardano is a blockchain platform. The development started in 2015 and was launched in 2017
                             by Charles Hoskinson, co-founder of Ethereum and BitShares.
@@ -25,7 +25,7 @@ const CardanoPageContent = ({ element }) => {
                      </Text>
                     </Box>
                     <Box p="10" d="flex" justifyContent="center" width={["100%","50%"]}>
-                        <Image boxSize="320px" borderRadius="5px" src={'./images/cardano.jpeg'} alt="cardano logo" />
+                        <Image boxSize="280px" borderRadius="5px" src={'./images/cardano.jpeg'} alt="cardano logo" />
                     </Box>
                 </Box>
 

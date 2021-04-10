@@ -16,9 +16,9 @@ const BitcoinPageContent = ({ element }) => {
         <Container width="100vw" minH="100vh" >
             <Header />
             <Box minW="100vw" ref={element}  >
-                <Box d="flex" flexDirection="row" flexWrap="wrap">
+                <Box p="8" d="flex" flexDirection="row" flexWrap="wrap" justifyContent="center">
                     <Box p="8" mt="8" width={["100%","50%"]}>
-                        <Text fontSize="16px">
+                        <Text fontSize="20px">
                             Bitcoin is a cryptocurrency. It is a decentralized digital currency that is based on cryptography.
                             As such, it can operate without the need of a central authority like a central bank or a company. It is unlike government-issued or fiat currencies such as US Dollars or Euro in which they are controlled by the country’s central bank.
                             The decentralized nature allows it to operate on a peer-to-peer network whereby users are able to send funds to each other without going through intermediaries.
