@@ -7,7 +7,7 @@ const AltcoinsNewsHighlights = () => {
     <Box d="flex" flexWrap="wrap" justifyContent="center" m="4">
       <NewsCard
         title="TLM, Aliens may be the next hot coin available for staking in Binance"
-        description="Binance announces the 19th project on Binance Launchpool - Alien Worlds (TLM), a simulated economy where players compete with NFTs. https://alienworlds.io/ . Listing on Binance 2021-04-13"
+        description="Binance announces the 19th project on Binance Launchpool - Alien Worlds (TLM), a simulated economy where players compete with NFTs. Listing on Binance 2021-04-13"
         imageUrl="./images/tlm.jpeg"
         url="#"
       />

@@ -25,7 +25,7 @@ const HomeNews = () => {
   return (
     <>
       { !isLoading ? (
-        <Box d="flex" flexDirection="row" justifyContent="space-around">
+        <Box d="flex" flexDirection="row" justifyContent="space-around" flexWrap="wrap">
           <HomeNewsHighlights />
           {news &&
             news.slice(0, 4).map(news => {
