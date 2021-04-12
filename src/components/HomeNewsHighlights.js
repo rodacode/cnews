@@ -4,11 +4,11 @@ const HomeNewsHighlights = () => {
   return (
     <>
       <NewsCard
-        title="Tesla is now accepting bitcoin as payment method"
-        description="Elon Musk, Tesla CEO, announced that the company is accepting bitcoin as a payment method to buy Tesla vehicles in the United States.
-      But not only that, he also said that is going to hodl the bitcoins that the company get from the sells."
+        title="Binance Launches Zero-Commission, Tradable Stock Tokens"
+        description="Binance announces the official launch of its zero-commission, tradable stock tokens, allowing the users to trade fractional stocks. Stock tokens are denominated, settled, and collateralized in BUSD.
+        The first Binance Stock Token to be listed is Tesla Inc. (TSLA). Trading for the TSLA/BUSD pair is scheduled to open at 2021-04-12 1:35 PM (UTC). Users will be able to trade fractional Tesla stock on the Binance website."
         imageUrl="./images/teslaNews.jpeg"
-        url="#"
+        url="https://www.binance.com/en/support/articles/2c64611658c645a59e05ef12f02c22ab"
       />
       <NewsCard
         title="Coinbase made more in Q1 2021 than all of 2020"
