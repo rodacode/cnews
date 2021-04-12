@@ -12,7 +12,7 @@ const Index = () => {
       <Head>
         <title>The Crypto Road</title>
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
-        <meta name="description" content="✅ Crypto and Bitcoin news, price and traders tricks. Enjoy the crypto road to the descentralize land -- The Crypto Road 🌝" />
+        <meta name="description" content="✅ Crypto and Bitcoin news, price and traders tricks. Enjoy the crypto road to the descentralized land -- The Crypto Road 🌝" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-G2G7GEHKSN"></script>
         <script dangerouslySetInnerHTML={
           {
