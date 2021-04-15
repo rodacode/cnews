@@ -12,13 +12,14 @@ const NewsCard = ({ title, description, imageUrl, url }) => {
             m="3">
             <Box borderWidth="1px"
                 overflow="hidden"
-                bgGradient="linear(to-t, blue.200, green.500)">
+                bgGradient="linear(to-t, blue.200, green.500)"
+                minH="120px">
                 <Heading m="4" mb="4" as="h4" size="md">
                     <strong>{title}</strong>
                 </Heading>
             </Box>
             <Box d="flex" flexDirection="column">
-                <Box>
+                <Box maxH="380px">
                     <Image boxSize="100%" src={imageUrl} alt="uni news" />
                 </Box>
                 <Box>
