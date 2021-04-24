@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: thecryptoroad.com
+Token: c3e6c7220c62080dcf8a415ac22fbc52850394e86650fdb6ceaff8abf1868eb9
