@@ -30,13 +30,13 @@ const TopTenCoins = () => {
     return (
         <Flex flexDirection='column'>
             {!isLoading ? (
-                <Table variant="simple">
+                <Table variant="simple" size={["sm", "md"]}>
                     <Thead>
                         <Tr>
                             <Th></Th>
                             <Th>Coin</Th>
-                            <Th textAlign="center">Price</Th>
-                            <Th >Last 24 hs.</Th>
+                            <Th isNumeric>Price</Th>
+                            <Th isNumeric>Last 24 hs.</Th>
                         </Tr>
                     </Thead>
                     <Tbody>
@@ -47,9 +47,9 @@ const TopTenCoins = () => {
                                     /></Td>
                                     <Td>{coin.symbol.toUpperCase()}</Td>
                                     <Td isNumeric>{coin.current_price} US$</Td>
-                                    { Math.sign(coin.price_change_percentage_24h) === -1 ?
-                                        <Td color="red">{coin.price_change_percentage_24h.toFixed(2)} %</Td> :
-                                        <Td color="green">{coin.price_change_percentage_24h.toFixed(2)} %</Td>
+                                    {Math.sign(coin.price_change_percentage_24h) === -1 ?
+                                        <Td isNumeric color="red">{coin.price_change_percentage_24h.toFixed(2)} %</Td> :
+                                        <Td isNumeric color="green">{coin.price_change_percentage_24h.toFixed(2)} %</Td>
                                     }
                                 </Tr>
                             )
