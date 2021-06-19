@@ -8,17 +8,17 @@ import { DarkModeSwitch } from './DarkModeSwitch'
 
 const Header = () => (
   <>
-    <Box mb="10" mt="6" d="flex" flexDirection="row" flexWrap="wrap">
-      <Box width={["100%", "100%", 1 / 3]} p="8">
-        <Box display={["none", "block"]}>
+    <Box mb="10" mt={["2", "6"]} d="flex" flexDirection="row" flexWrap="wrap">
+      <Box width={["100%", "100%", 1 / 3]} p="8" display={["none", "block"]}>
+        <Box>
         </Box>
       </Box>
       <Box width={["100%", "100%", 1 / 3]}>
-        <Box mb="16">
+        <Box mb={["2", "16"]}>
           <HeaderHero />
         </Box>
       </Box>
-      <Box width={["100%", "100%", 1 / 3]}>
+      <Box width={["100%", "100%", 1 / 3]} display={["none", "block"]} >
         <Box d="flex" alignItems="center" mt={["2", "14"]} justifyContent="center" flexDirection="column">
           <Text textAlign="center">Follow us on:</Text>
           <SocialIcons />

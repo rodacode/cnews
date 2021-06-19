@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Flex, Image } from '@chakra-ui/react';
+import { Box, Image } from '@chakra-ui/react';
 import {
     Table,
     Thead,
@@ -28,7 +28,7 @@ const TopTenCoins = () => {
         }
     }, [])
     return (
-        <Flex flexDirection='column'>
+        <Box d="flex" p="4" flexDirection='column'>
             {!isLoading ? (
                 <Table variant="simple" size={["sm", "md"]}>
                     <Thead>
@@ -59,7 +59,7 @@ const TopTenCoins = () => {
             ) :
                 <TopTenCoinsSkeleton />
             }
-        </Flex>
+        </Box>
     );
 };
 
