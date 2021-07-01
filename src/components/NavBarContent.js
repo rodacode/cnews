@@ -33,17 +33,19 @@ export default function NavBarContent() {
                 color={useColorModeValue('gray.600', 'white')}
                 minH={'60px'}
                 py={{ base: 2 }}
-                px={{ base: 4 }}
+                px={{ base: 1 }}
                 borderBottom={1}
                 borderStyle={'solid'}
                 borderColor={useColorModeValue('gray.200', 'gray.900')}
                 align={'center'}
                 flexWrap={'wrap'}
-                justifyContent={'space-around'}>
+                justifyContent={'flex-start'}
+                alignItems="center">
                 <Flex
-                    flex={{ base: 1, md: 'auto' }}
                     ml={{ base: -2 }}
-                    display={{ base: 'flex', md: 'none' }}>
+                    display={{ base: 'flex', md: 'none' }}
+                    flexWrap={'wrap'}
+                >
                     <IconButton
                         onClick={onToggle}
                         icon={
@@ -53,11 +55,11 @@ export default function NavBarContent() {
                         aria-label={'Toggle Navigation'}
                     />
                 </Flex>
-                <Flex justify={{ base: 'center', md: 'start' }}>
+                <Flex justify={{ md: 'start' }} alignItems="center">
                     <Link href={'/'}>
                         <a>
-                            <Image boxSize="80px" borderRadius="50%"
-                                src="./images/crypto_logo_white.png" />
+                            <Image boxSize="70px" borderRadius="50%"
+                                src="./images/crypto_logo2.png" />
                         </a>
                     </Link>
                     <Flex display={{ base: 'none', md: 'flex' }} ml={10}>
