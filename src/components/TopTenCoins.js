@@ -19,7 +19,6 @@ const TopTenCoins = () => {
         try {
             setIsLoading(true)
             fetch(url).then((res) => res.json()).then((response) => {
-                console.log('REsponse', response)
                 setCoins(response);
                 setIsLoading(false)
             })

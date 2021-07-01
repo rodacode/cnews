@@ -51,6 +51,16 @@ const HeaderNav = () => (
                     _hover={{
                         textDecoration: 'none',
                     }}
+                    href="/defi">
+                    DEFI
+                </Link>
+                <Link
+                    p={2}
+                    fontSize={'sm'}
+                    fontWeight={500}
+                    _hover={{
+                        textDecoration: 'none',
+                    }}
                     href="/twitter">
                     ON TWITTER
                 </Link>
