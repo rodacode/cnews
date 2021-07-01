@@ -236,21 +236,14 @@ const NAV_ITEMS = [
     },
     {
         label: 'Altcoins',
-        children: [
-            {
-                label: 'Trending',
-                subLabel: 'Trending Altcoins',
-                href: '/altcoins',
-            },
-            {
-                label: 'Defi',
-                subLabel: 'Understanding DEFI',
-                href: '#',
-            },
-        ],
+        href: '/altcoins',
     },
     {
         label: 'Cardano',
         href: '/cardano',
+    },
+    {
+        label: 'On Twitter',
+        href: '/twitter',
     },
 ];
