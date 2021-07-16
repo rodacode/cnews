@@ -243,6 +243,10 @@ const NAV_ITEMS = [
         href: '/cardano',
     },
     {
+        label: 'Crypto Wiki',
+        href: '/cryptoWiki',
+    },
+    {
         label: 'On Twitter',
         href: '/twitter',
     },
