@@ -41,6 +41,16 @@ const HeaderNav = () => (
                     _hover={{
                         textDecoration: 'none',
                     }}
+                    href="/cryptoWiki">
+                    CRYPTO WIKI
+                </Link>
+                <Link
+                    p={2}
+                    fontSize={'sm'}
+                    fontWeight={500}
+                    _hover={{
+                        textDecoration: 'none',
+                    }}
                     href="/cardano">
                     CARDANO
                 </Link>
