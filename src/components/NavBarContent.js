@@ -239,6 +239,10 @@ const NAV_ITEMS = [
         href: '/altcoins',
     },
     {
+        label: 'DEFI',
+        href: '/defi',
+    },
+    {
         label: 'Cardano',
         href: '/cardano',
     },
