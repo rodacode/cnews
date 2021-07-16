@@ -42,8 +42,6 @@ const OraclesWikiContent = ({ element }) => {
                 <Box p="10" d="flex" justifyContent="center" width={["100%", "50%"]}>
                     <Text fontSize="14px" >
                         Oracles provide external data to smart contracts that operate on blockchain technology. Since blockchains and smart contracts are closed systems (where there are rigid processes for connecting to external data sources), oracles present a way of securely providing off-chain data to a blockchain network’s on-chain environment. They are essentially a form of communication between the outside world and the world of blockchain. There are a few different types of oracles that we’ll discuss, and we’ll cover the potential challenges that oracles face within their role of executing smart contracts.
-                    </Text>
-                    <Text fontSize="14px" >
                         Blockchains and smart contracts cannot access data from outside of their network. In order to know what to do, a smart contract often needs access to in- formation from the outside world that is relevant to the contractual agreement, in the form of electronic data, also referred to as oracles. These oracles are services that send and verify real world occurrences and submit this information to smart contracts, triggering state changes on the blockchain.                  </Text>
                 </Box>
                 <Box p="4" d="flex" justifyContent="center" flexDirection="column" width={["100%", "50%"]}>
