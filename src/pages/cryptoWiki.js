@@ -37,13 +37,14 @@ const CryptoWiki = () => {
                 TOKEN TYPES
               </Text>
             </Box>
-            <Box p="10" d="flex" justifyContent="center">
-              <Image boxSize="90%" borderRadius="5px" src={'./images/token_types.png'} alt="token types" />
+            <Box p="2" d="flex" ml="auto" mr="auto" justifyContent="center" width={["320px", "90%"]} >
+              <Image boxSize="100%" borderRadius="5px" src={'./images/token_types.png'} alt="token types" />
             </Box>
             <OraclesWikiContent element={element} />
           </Box>
         </Box>
 
+        <Footer />
 
       </Container>
     </>
