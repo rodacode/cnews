@@ -5,6 +5,7 @@ import Navbar from "../components/NavBar"
 import Head from 'next/head'
 import useSticky from "../hooks/useSticky.js"
 import Header from '../components/Header'
+import DefiContent from '../components/DefiContent'
 
 const Defi = () => {
   const { isSticky, element } = useSticky()
@@ -35,6 +36,7 @@ const Defi = () => {
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
         <Header />
+        <DefiContent element={element} />
         {data ?
           <>
             <Text>Total: {data.All.total} </Text>
