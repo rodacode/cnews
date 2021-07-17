@@ -11,11 +11,10 @@ const SocialIcons = () => {
             <Flex justifyContent="center" flexDirection="row" maxW={'15vv'}>
             </Flex>
             <Flex justifyContent="center">
-                <Box m="4">
-                    <FontAwesomeIcon icon={faInstagram} />
-
-                </Box>
-
+                <Link href="https://www.instagram.com/the_crypto_road/"><a target="_blank">
+                    <Box m="4"><FontAwesomeIcon icon={faInstagram} /></Box>
+                </a>
+                </Link>
                 <Link href="https://www.youtube.com/channel/UCG2SZYXxL-jErJ9lW0fO89w"><a target="_blank">
                     <Box m="4"><FontAwesomeIcon icon={faYoutube} /></Box>
                 </a>
