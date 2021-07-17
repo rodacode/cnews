@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
     <url>
         <loc>https://thecryptoroad.com</loc>
     </url>
-        <url>
+    <url>
         <loc>https://thecryptoroad.com/bitcoin</loc>
     </url>
-        <url>
+    <url>
         <loc>https://thecryptoroad.com/altcoins</loc>
-    </url>   
-         <url>
+    </url>
+    <url>
         <loc>https://thecryptoroad.com/cardano</loc>
+    </url>
+    <url>
+        <loc>https://thecryptoroad.com/defi</loc>
+    </url>
+    <url>
+        <loc>https://thecryptoroad.com/cryptoWiki</loc>
+    </url>
+    <url>
+        <loc>https://thecryptoroad.com/twitter</loc>
     </url>
 </urlset>
