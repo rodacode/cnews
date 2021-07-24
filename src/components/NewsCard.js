@@ -4,6 +4,7 @@ import { Box, Text, Heading, Image } from '@chakra-ui/react';
 const NewsCard = ({ title, description, imageUrl, url }) => {
     return (
         <Box
+            boxShadow="dark-lg"
             maxW="sm"
             borderWidth="1px"
             borderRadius="lg"
@@ -30,7 +31,7 @@ const NewsCard = ({ title, description, imageUrl, url }) => {
             </Box>
             <Box m="5" as="a" href={url}>
                 Read more...
-              </Box>
+            </Box>
         </Box>
     )
 };

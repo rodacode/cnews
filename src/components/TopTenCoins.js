@@ -27,7 +27,9 @@ const TopTenCoins = () => {
         }
     }, [])
     return (
-        <Box d="flex" p="4" flexDirection='column'>
+        <Box d="flex" p="4" m="4" flexDirection='column' boxShadow="dark-lg"
+            borderWidth="1px"
+            borderRadius="lg">
             {!isLoading ? (
                 <Table variant="simple" size={["sm", "md"]}>
                     <Thead>

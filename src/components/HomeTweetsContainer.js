@@ -3,7 +3,7 @@ import HomeTweets from './HomeTweets'
 
 const HomeTweetsContainer = () => {
   return (
-    <Box boxShadow="dark-lg"bg="#fff" pt="12" pb="20" borderRadius="50" ml="4" mr="4">
+    <Box boxShadow="dark-lg" bg="#fff" pt="12" pb="20" borderRadius="50" ml="4" mr="4">
       <Heading textAlign="center" m="12" color="#16161D">On Tweeter</Heading>
       <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
         <Box m="4">
