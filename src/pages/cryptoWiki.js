@@ -30,7 +30,7 @@ const CryptoWiki = () => {
           <Box mt="6" ml="auto" mr="auto" maxW="320px" d="flex" justifyContent="center" flexDirection="column" className="title__container">
             <Heading fontSize={["4vw", "2vw"]} className="title__the">The</Heading>
             <Heading as="h1" className="title" fontSize={["12vw", "6vw"]}>Crypto</Heading>
-            <Heading className="title__road" fontSize={["2vw", "2vw"]}>wiki</Heading>
+            <Heading className="title__road" fontSize={["4vw", "2vw"]}>wiki</Heading>
           </Box>
           <Box width={"100%"} mr="auto" ml="auto" d="flex" flexDirection="column" flexWrap="wrap" justifyContent="center">
             <CryptoDictionary />
