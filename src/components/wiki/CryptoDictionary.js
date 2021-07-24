@@ -299,7 +299,12 @@ const CryptoDictionary = () => {
         },
         {
             letter: 'Y',
-            words: []
+            words: [
+                {
+                    title: 'Yield',
+                    text: 'In financial terms, yield is used to describe a certain amount earned on a security, over a particular period of time. It refers to the interest or dividend earned on debt or equity, respectively, and is conventionally expressed annually as a percentage based on the current market value or face value of the security.'
+                }
+            ]
         },
         {
             letter: 'Z',
