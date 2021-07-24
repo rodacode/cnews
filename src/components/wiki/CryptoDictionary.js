@@ -56,6 +56,10 @@ const CryptoDictionary = () => {
                     text: 'Decentralized Application or dApp is defined as a software application that has its technology running publicly on a network of computers. With a dApp, the technology is being maintained by many individuals instead of by one organization. That network gives the technology security. A hacker cannot incorrectly alter the application’s data unless they were able to get access into nearly all of the network’s computers and adjust it there. dApp can also be spelled “DApp” or “Dapp”.'
                 },
                 {
+                    title: 'DEFI',
+                    text: 'In its simplest form, decentralized finance is a system by which financial products become available on a public decentralized blockchain network, making them open to anyone to use, rather than going through middlemen like banks or brokerages. Unlike a bank or brokerage account, a government-issued ID, Social Security number, or proof of address are not necessary to use DeFi. More specifically, DeFi refers to a system by which software written on blockchains makes it possible for buyers, sellers, lenders, and borrowers to interact peer to peer or with a strictly software-based middleman rather than a company or institution facilitating a transaction.'
+                },
+                {
                     title: 'DEX',
                     text: 'Decentralized Exchange or DEX is defined as a place where cryptocurrencies are traded directly person-to-person, without a company holding their money or crypto for them. Compare a decentralized exchange with a centralized exchange. In a centralized exchange, the customer gives their crypto to the exchange and trusts them to hold it safely. The exchange lets them move the value of that deposit around and later withdraw it in the cryptocurrency they represent. A decentralized exchange doesn’t require you trust someone to hold your crypto for you. This positive quality is known as “trustless”.'
                 }
