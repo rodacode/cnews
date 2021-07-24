@@ -3,17 +3,13 @@ import { Container } from '../components/Container'
 import Navbar from "../components/NavBar"
 import Head from 'next/head'
 import {
-  Box, Text, Image, Table,
-  Thead,
-  Tbody,
-  Tr,
-  Th,
-  Td
+  Box, Text, Image, Heading
 } from '@chakra-ui/react';
 import useSticky from "../hooks/useSticky.js"
 import Footer from '../components/Footer'
 import Header from '../components/Header'
 import OraclesWikiContent from '../components/OraclesWikiContent';
+import CryptoDictionary from '../components/wiki/CryptoDictionary';
 
 const CryptoWiki = () => {
   const { isSticky, element } = useSticky()
@@ -31,7 +27,13 @@ const CryptoWiki = () => {
         <Header />
         <Navbar sticky={isSticky} />
         <Box minW="100vw" element={element}>
+          <Box mt="6" ml="auto" mr="auto" maxW="320px" d="flex" justifyContent="center" flexDirection="column" className="title__container">
+            <Heading fontSize={["4vw", "2vw"]} className="title__the">The</Heading>
+            <Heading as="h1" className="title" fontSize={["12vw", "6vw"]}>Crypto</Heading>
+            <Heading className="title__road" fontSize={["2vw", "2vw"]}>wiki</Heading>
+          </Box>
           <Box width={"100%"} mr="auto" ml="auto" d="flex" flexDirection="column" flexWrap="wrap" justifyContent="center">
+            <CryptoDictionary />
             <Box p="2" mt="8">
               <Text fontSize="24px" textAlign="center">
                 TOKEN TYPES

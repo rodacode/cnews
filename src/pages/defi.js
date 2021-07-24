@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Container } from '../components/Container'
-import { Box, Text } from '@chakra-ui/react'
+import { Text } from '@chakra-ui/react'
 import Navbar from "../components/NavBar"
 import Head from 'next/head'
 import useSticky from "../hooks/useSticky.js"
@@ -39,7 +39,7 @@ const Defi = () => {
         <DefiContent element={element} />
         {data ?
           <>
-            <Text>Total: {data.All.total} </Text>
+            <Text>Total: {data.All?.total} </Text>
             <Text>Dominance: {data.All.dominance_name} </Text>
 
             <Text>Dominance value: {data.All.dominance_value} </Text>

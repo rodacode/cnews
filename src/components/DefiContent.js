@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {
-    Box, Text, Image, Table,
-    Thead,
-    Tbody,
-    Tr,
-    Th,
-    Td
+    Box, Text
 } from '@chakra-ui/react';
 
 
@@ -32,6 +27,7 @@ const DefiContent = ({ element }) => {
         const filteredCoin = coins.filter(coin => coin.id === coinId)
         return filteredCoin[0]
     }
+
     return (
         <Box p="2" mt="8" ref={element}>
             <Text fontSize="24px" textAlign="center">
