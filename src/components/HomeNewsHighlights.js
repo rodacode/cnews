@@ -4,10 +4,14 @@ const HomeNewsHighlights = () => {
   return (
     <>
       <NewsCard
-        title="Kusama’s parachain auctions"
-        description="Eleven projects joined the race when Kusama parachain auctions started on June 15. A few more got in during the latter auctions of the first batch. With impressive gains to the tune of 900,000 KSM (approximately $180 million, at the time of writing), are Kusama auctions still fair and democratic, or is everything already decided by whales?"
-        imageUrl="./images/kusama.png"
-        url="https://cointelegraph.com/news/how-much-intrigue-is-behind-kusama-s-parachain-auctions"
+        title="Ethereum’s London Hard Fork happening this week"
+        description="The next major upgrade coming to the Ethereum blockchain is the London hard fork. Although it’s difficult to pinpoint exactly when it will be released, current thinking suggests that it’ll be on Wednesday, Aug. 4.
+
+ 
+
+        Contained within the hard fork are five Ethereum Improvement Proposals, otherwise known as EIPs for short. It’s here where we find the devil in the detail, and the reasons why a not-insubstantial-chunk of the community are unhappy."
+        imageUrl="./images/eth.jpg"
+        url="https://coinmarketcap.com/alexandria/article/ethereums-london-hard-fork-what-is-it-and-why-is-it-controversial"
       />
       <NewsCard
         title="Grayscale Hires David LaValle to Be ETF Head"
