@@ -10,10 +10,10 @@ const HomeNewsHighlights = () => {
         url="https://cointelegraph.com/news/how-much-intrigue-is-behind-kusama-s-parachain-auctions"
       />
       <NewsCard
-        title="$22B hedge fund Point72 reportedly searching for a 'head of crypto'"
-        description="New York billionaire Steven Cohen’s hedge fund Point72 Asset Management, is reportedly searching for a “head of crypto."
-        imageUrl="./images/cointelegraph.jpeg"
-        url="https://cointelegraph.com/news/22b-hedge-fund-point72-reportedly-searching-for-a-head-of-crypto"
+        title="Grayscale Hires David LaValle to Be ETF Head"
+        description="LaValle is Grayscale’s first hire for its ETF business following the posting in the spring of several job listings by Grayscale for ETF specialists. (Grayscale is a subsidiary of Digital Currency Group, CoinDesk’s parent company.)"
+        imageUrl="./images/lavalle.jpeg"
+        url="https://www.coindesk.com/grayscale-hires-david-lavalle-to-be-etf-head"
       />
     </>
   );
