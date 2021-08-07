@@ -14,10 +14,10 @@ const HomeNewsHighlights = () => {
         url="https://coinmarketcap.com/alexandria/article/ethereums-london-hard-fork-what-is-it-and-why-is-it-controversial"
       />
       <NewsCard
-        title="Grayscale Hires David LaValle to Be ETF Head"
-        description="LaValle is Grayscale’s first hire for its ETF business following the posting in the spring of several job listings by Grayscale for ETF specialists. (Grayscale is a subsidiary of Digital Currency Group, CoinDesk’s parent company.)"
-        imageUrl="./images/lavalle.jpeg"
-        url="https://www.coindesk.com/grayscale-hires-david-lavalle-to-be-etf-head"
+        title="Lionel Messi NFT Collection Set for Launch"
+        description="Lionel Messi will be celebrated in his first authenticated NFT collection, 'The Messiverse.'"
+        imageUrl="./images/messi.jpeg"
+        url="https://www.coindesk.com/lionel-messi-nft-collection-set-for-launch"
       />
     </>
   );
