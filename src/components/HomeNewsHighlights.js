@@ -4,14 +4,10 @@ const HomeNewsHighlights = () => {
   return (
     <>
       <NewsCard
-        title="Ethereum’s London Hard Fork happening this week"
-        description="The next major upgrade coming to the Ethereum blockchain is the London hard fork. Although it’s difficult to pinpoint exactly when it will be released, current thinking suggests that it’ll be on Wednesday, Aug. 4.
-
- 
-
-        Contained within the hard fork are five Ethereum Improvement Proposals, otherwise known as EIPs for short. It’s here where we find the devil in the detail, and the reasons why a not-insubstantial-chunk of the community are unhappy."
-        imageUrl="./images/eth.jpg"
-        url="https://coinmarketcap.com/alexandria/article/ethereums-london-hard-fork-what-is-it-and-why-is-it-controversial"
+        title="Avalanche (AVAX) price is up 200% this month"
+        description="One of the biggest developments to happen for the Avalanche protocol was the announcement of Avalanche Rush on Aug. 18, a $180 million liquidity mining incentive program launched in conjunction with Aave and Curve that is designed to introduce more applications and assets to its growing DeFi ecosystem"
+        imageUrl="./images/avax.png"
+        url="https://cointelegraph.com/news/3-reasons-why-avalanche-avax-price-is-up-200-this-month"
       />
       <NewsCard
         title="Lionel Messi NFT Collection Set for Launch"
