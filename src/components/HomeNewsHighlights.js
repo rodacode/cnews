@@ -4,10 +4,10 @@ const HomeNewsHighlights = () => {
   return (
     <>
       <NewsCard
-        title="Avalanche (AVAX) price is up 200% this month"
-        description="One of the biggest developments to happen for the Avalanche protocol was the announcement of Avalanche Rush on Aug. 18, a $180 million liquidity mining incentive program launched in conjunction with Aave and Curve that is designed to introduce more applications and assets to its growing DeFi ecosystem"
-        imageUrl="./images/avax.png"
-        url="https://cointelegraph.com/news/3-reasons-why-avalanche-avax-price-is-up-200-this-month"
+        title="Moonriver Smart Contract Platform Completes Launch Sequence and is Live on Kusama"
+        description="Moonbeam, the Ethereum-compatible smart contract platform on Polkadot, announced today the launch completion of Moonriver, its community-led sister network on Kusama.  Moonriver is now live. In completing the final phase of the launch process, balance transfers and EVM functionality have been enabled and the network is fully functional. Moonriver is the first EVM-compatible parachain on Kusama, and the only blockchain to deliver a seamless experience through full Ethereum compatibility"
+        imageUrl="./images/moonriver.png"
+        url="https://moonbeam.network/announcements/moonriver-completes-launch-kusama/"
       />
       <NewsCard
         title="Lionel Messi NFT Collection Set for Launch"

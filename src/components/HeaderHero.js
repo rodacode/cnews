@@ -7,7 +7,7 @@ const HeaderHero = () => (
             <Heading as="h1" className="title" fontSize={["20vw", "10vw"]}>Crypto</Heading>
             <Heading className="title__road" fontSize={["4vw", "2vw"]}>road</Heading>
         </Box>
-        <Text p="4" textAlign="center">News about Bitcoin, crypto, altcoins, nfts and descentralization</Text>
+        <Text p="4" textAlign="center">News about Bitcoin, crypto, altcoins, nfts and decentralization</Text>
     </Box>
 )
 
