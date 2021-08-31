@@ -10,10 +10,10 @@ const HomeNewsHighlights = () => {
         url="https://moonbeam.network/announcements/moonriver-completes-launch-kusama/"
       />
       <NewsCard
-        title="Lionel Messi NFT Collection Set for Launch"
-        description="Lionel Messi will be celebrated in his first authenticated NFT collection, 'The Messiverse.'"
-        imageUrl="./images/messi.jpeg"
-        url="https://www.coindesk.com/lionel-messi-nft-collection-set-for-launch"
+        title="Kilt Protocol looking to be the next winner of the Kusama Crowdloans auction"
+        description="KILT provides a base layer for verifiable credentials in the Web 3.0 world. Using the benefits of blockchain, we bring real-world accreditation to the digital world, creating a way for business to verify credentials and bring trust to a whole new level."
+        imageUrl="./images/kilt.png"
+        url="https://www.kilt.io/"
       />
     </>
   );
