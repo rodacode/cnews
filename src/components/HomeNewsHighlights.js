@@ -10,7 +10,7 @@ const HomeNewsHighlights = () => {
         url="https://moonbeam.network/announcements/moonriver-completes-launch-kusama/"
       />
       <NewsCard
-        title="Kilt Protocol looking to be the next winner of the Kusama Crowdloans auction"
+        title="Kilt Protocol the next project to rock Kusama"
         description="KILT provides a base layer for verifiable credentials in the Web 3.0 world. Using the benefits of blockchain, we bring real-world accreditation to the digital world, creating a way for business to verify credentials and bring trust to a whole new level."
         imageUrl="./images/kilt.png"
         url="https://www.kilt.io/"
