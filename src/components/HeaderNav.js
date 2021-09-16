@@ -6,8 +6,8 @@ const Links = [
     { title: 'CRYPTO WIKI', link: '/cryptoWiki' },
     { title: 'DEFI', link: '/defi' },
     { title: 'DOT', link: '/polkadot' },
+    { title: 'KUSAMA', link: '/kusama' },
     { title: 'ALTCOINS', link: '/altcoins' },
-    { title: 'CARDANO', link: '/cardano' },
     { title: 'ON TWITTER', link: '/twitter' }
 ];
 

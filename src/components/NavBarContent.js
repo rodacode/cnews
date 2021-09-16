@@ -243,12 +243,12 @@ const NAV_ITEMS = [
         href: '/defi',
     },
     {
-        label: 'POLKADOT',
+        label: 'Polkadot',
         href: '/polkadot',
     },
     {
-        label: 'Cardano',
-        href: '/cardano',
+        label: 'Kusama',
+        href: '/kusama',
     },
     {
         label: 'Crypto Wiki',
