@@ -18,7 +18,7 @@ const HomeTweetsContainer = () => {
         </Box>
         <Box m="4">
           <HomeTweets
-            user={"edwardmorra_btc"}
+            user={"BitcoinFear"}
           />
         </Box>
         <Box m="4">
