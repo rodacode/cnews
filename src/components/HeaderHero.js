@@ -1,11 +1,24 @@
-import { Box, Flex, Heading, Text } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 
 const HeaderHero = () => (
     <Box mt="6" d="flex" justifyContent="center" flexDirection="column">
         <Box className="title__container">
-            <Heading fontSize={["8vw", "2vw"]} className="title__the">The</Heading>
-            <Heading as="h1" className="title" fontSize={["20vw", "10vw"]}>Crypto</Heading>
-            <Heading className="title__road" fontSize={["4vw", "2vw"]}>road</Heading>
+        <Text
+                bgGradient="linear(to-l, #7928CA, #FF0080)"
+                bgClip="text"
+                fontSize="6xl"
+                fontWeight="extrabold" fontSize={["8vw", "2vw"]} className="title__the">The</Text>
+            <Text
+                bgGradient="linear(to-l, #7928CA, #FF0080)"
+                bgClip="text"
+                fontSize="6xl"
+                fontWeight="extrabold"
+            className="title" fontSize={["20vw", "10vw"]}>Crypto</Text>
+            <Text
+                bgGradient="linear(to-l, #7928CA, #FF0080)"
+                bgClip="text"
+                fontSize="6xl"
+                fontWeight="extrabold" className="title__road" fontSize={["4vw", "2vw"]}>road</Text>
         </Box>
         <Text p="4" textAlign="center">News about Bitcoin, crypto, altcoins, nfts and decentralization</Text>
     </Box>
