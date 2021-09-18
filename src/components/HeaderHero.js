@@ -20,7 +20,6 @@ const HeaderHero = () => (
                 fontSize="6xl"
                 fontWeight="extrabold" className="title__road" fontSize={["4vw", "2vw"]}>road</Text>
         </Box>
-        <Text p="4" textAlign="center">News about Bitcoin, crypto, altcoins, nfts and decentralization</Text>
     </Box>
 )
 
