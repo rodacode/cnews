@@ -251,6 +251,10 @@ const NAV_ITEMS = [
         href: '/kusama',
     },
     {
+        label: 'Moonriver',
+        href: '/moonriver',
+    },
+    {
         label: 'Crypto Wiki',
         href: '/cryptoWiki',
     },

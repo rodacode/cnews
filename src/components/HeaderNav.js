@@ -7,6 +7,7 @@ const Links = [
     { title: 'DEFI', link: '/defi' },
     { title: 'DOT', link: '/polkadot' },
     { title: 'KUSAMA', link: '/kusama' },
+    { title: 'MOONRIVER', link: '/moonriver' },
     { title: 'ALTCOINS', link: '/altcoins' },
     { title: 'ON TWITTER', link: '/twitter' }
 ];

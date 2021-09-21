@@ -1,11 +1,11 @@
 import { Container } from '../components/Container'
 import Navbar from "../components/NavBar"
 import Head from 'next/head'
-import KusamaPageContent from  "../components/KusamaPageContent"
+import MoonriverPageContent from  "../components/MoonriverPageContent"
 import useSticky from "../hooks/useSticky.js"
 import { getDomainLocale } from 'next/dist/next-server/lib/router/router'
 
-const Kusama = () => {
+const Moonriver = () => {
     const { isSticky, element } = useSticky()
 
   return (
@@ -18,10 +18,10 @@ const Kusama = () => {
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
-        <KusamaPageContent element={element}/>
+        <MoonriverPageContent element={element}/>
       </Container>
     </>
   )
 }
 
-export default Kusama
+export default Moonriver
