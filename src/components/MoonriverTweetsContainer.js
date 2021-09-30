@@ -4,7 +4,7 @@ import HomeTweets from './HomeTweets'
 const MoonriverTweetsContainer = () => {
   return (
     <Box boxShadow="dark-lg"bg="#fff" pt="12" pb="20" borderRadius="50" ml="4" mr="4">
-      <Heading textAlign="center" m="12" color="#16161D"> DOT on Tweeter</Heading>
+      <Heading textAlign="center" m="12" color="#16161D"> MOONRIVER on Tweeter</Heading>
       <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
         <Box m="4">
           <HomeTweets
@@ -13,7 +13,7 @@ const MoonriverTweetsContainer = () => {
         </Box>
         <Box m="4">
           <HomeTweets
-            user={"gavofhood"}
+            user={"Trobriand15"}
           />
         </Box>
         <Box m="4">
@@ -23,7 +23,7 @@ const MoonriverTweetsContainer = () => {
         </Box>
         <Box m="4">
           <HomeTweets
-            user={"JEFE_DOTSAMA"}
+            user={"PaulsCryptoCall"}
           />
         </Box>
 
