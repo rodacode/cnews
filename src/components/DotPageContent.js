@@ -16,22 +16,34 @@ const DotPageContent = ({ element }) => {
             <Box minW="100vw" ref={element}>
                 <Box width={"90%"} mr="auto" ml="auto" d="flex" flexDirection="column" flexWrap="wrap" justifyContent="center">
                 <Heading textAlign="center" mt="12" mb="12">POLKADOT</Heading>
+           
                 <Box width={"90%"} mr="auto" ml="auto" d="flex" flexDirection="row" flexWrap="wrap" justifyContent="center" alignItems="center">
-
-                    <Box p="2" mt="8" width={["100%", "50%"]}>
-                        <Text fontSize="16px">
+                <Text fontSize="16px">
                             Polkadot is a layer 0 blockchain created by Dr. Gavin Wood, co-founder of Ethereum, creator of Solidity , the smart contracts language used in ETH.
                         </Text>
+                    <Box p="2" mt="8" width={["100%", "50%"]}>
+                    
                         <Text fontSize="24px" mt="12" mb="4">POLKADOT KEY FEATURES</Text>
                         <UnorderedList>
-                            <ListItem>Heterogeneity</ListItem>
-                            <ListItem>Scalability</ListItem>
-                            <ListItem>Interoperability</ListItem>
-                            <ListItem>Shared security</ListItem>
-                            <ListItem>On-chain governance</ListItem>
-                            <ListItem>Forkless upgrades</ListItem>
-                            <ListItem>Extra key security</ListItem>
-                            <ListItem>Novel economics and game theory</ListItem>
+                            <ListItem fontWeight="bold" mb="2">Scalability</ListItem>
+                            <Text fontSize="16px" mb="4">
+                            Polkadot provides unprecedented economic scalability by enabling a common set of validators to secure multiple blockchains. Polkadot provides transactional scalability by spreading transactions across multiple parallel blockchains.                            </Text>
+                            <ListItem fontWeight="bold" mb="2">Interoperability</ListItem>
+                            <Text fontSize="16px" mb="4">
+                            Polkadot enables cross-blockchain transfers of any type of data or asset, not just tokens. Connecting to Polkadot gives you the ability to interoperate with a wide variety of blockchains in the Polkadot network.
+                            </Text>
+                            <ListItem fontWeight="bold" mb="2">Shared security</ListItem>
+                            <Text fontSize="16px" mb="4">
+                            Polkadot's novel data availability and validity scheme allows chains to interact with each other in a meaningful way. Chains remain independent in their governance, but united in their security.                            
+                            </Text>
+                            <ListItem fontWeight="bold" mb="2">On-chain governance</ListItem>
+                            <Text fontSize="16px" mb="4">
+                            Polkadot's novel data availability and validity scheme allows chains to interact with each other in a meaningful way. Chains remain independent in their governance, but united in their security.                            
+                            </Text>
+                            <ListItem fontWeight="bold" mb="2">Forkless upgrades</ListItem>
+                            <Text fontSize="16px" mb="4">
+                            Polkadot can upgrade without hard forks to integrate new features or fix bugs. This capability enables Polkadot to easily adapt to changes and upgrade itself as better technologies become available.
+                            </Text>
                         </UnorderedList>
                     </Box>
                     <Box p="10" d="flex" justifyContent="center" width={["100%", "50%"]}>

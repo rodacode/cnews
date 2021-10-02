@@ -22,6 +22,9 @@ const MoonriverPageContent = ({ element }) => {
                                 Moonriver is the network’s Kusama deployment, and have its own utility token also called Moonriver (MOVR).
                                 Supply and other token economic behaviors on Moonriver will be the same as Moonbeam, but token distribution will be different in order to support the unique goals and attributes of the network. Moonriver will serve as a “CanaryNet” for Moonbeam, but it will also be a community-led experiment where the community will decide the direction it takes. Among other things, Moonriver used a large parachain crowdloan to obtain its initial parachain slot on Kusama.
                             </Text>
+                            <Text fontSize="16px">
+                            By mirroring Ethereum’s Web3 RPC, accounts, keys, subscriptions, logs, and more, Moonriver minimizes the changes required to run existing Solidity smart contracts on the network. Ethereum projects can simply replicate their DApp and deploy it to Moonbeam using Hardhat, Truffle, Remix, and other popular deployment tools.
+                            </Text>
                         </Box>
                         <Box p="10" d="flex" justifyContent="center" width={["100%", "50%"]}>
                             <Image boxSize="280px" borderRadius="5px" src={'./images/moonriver.png'} alt="moonriver logo" />
