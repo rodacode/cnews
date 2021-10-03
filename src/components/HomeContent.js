@@ -49,7 +49,6 @@ const HomeContent = ({ element }) => {
 
                 <Box minW="100vw">
                     <TrendingCoins />
-                    <HomeTestimonials />
                     <HomeTweetsContainer />
                     <Footer />
                 </Box>
