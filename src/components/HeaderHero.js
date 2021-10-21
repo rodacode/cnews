@@ -4,8 +4,8 @@ const HeaderHero = () => (
     <Box mt="6" d="flex" justifyContent="center" flexDirection="column">
         <Box className="title__container">
         <Text
-                bgGradient="linear(to-l, #7928CA, #FF0080)"
-                bgClip="text"
+  bgGradient="linear(to-l, #7928CA, #FF0080)"
+  bgClip="text"
                 fontSize="6xl"
                 fontWeight="extrabold" fontSize={["8vw", "2vw"]} className="title__the">The</Text>
             <Text
