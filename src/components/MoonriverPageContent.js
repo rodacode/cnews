@@ -30,6 +30,9 @@ const MoonriverPageContent = ({ element }) => {
                             <Image boxSize="280px" borderRadius="5px" src={'./images/moonriver.png'} alt="moonriver logo" />
                         </Box>
                     </Box>
+                    <Box p="10" d="flex" justifyContent="center" width={"100%"}>
+                            <Image borderRadius="5px" src={'./images/ParallelParachains.jpeg'} alt="movr design chain" />
+                        </Box>
                 </Box>
 
                 <HomeMoonriverData />
