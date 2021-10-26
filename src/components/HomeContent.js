@@ -13,18 +13,14 @@ import {
 import HomeNews from './HomeNews'
 import HomeTweetsContainer from './HomeTweetsContainer'
 import TrendingCoins from './TrendingCoins'
-
-import HomeTestimonials from './HomeTestimonials'
-import HomeNFT from './HomeNFT'
 import Footer from './Footer'
-
 
 const HomeContent = ({ element }) => {
     const news = useSelector(state => state.news);
     return (
         <Container width="100vw" minH="100vh" >
             <Box>
-                <Header/>
+                <Header />
                 <Box minW="100vw" pb="12">
                     <Grid
                         templateColumns="repeat(5, 1fr)"
@@ -32,11 +28,9 @@ const HomeContent = ({ element }) => {
                         <GridItem colSpan={[5, 5, 3]}>
                             <Box>
                                 <div ref={element}>
-
                                     <Heading textAlign="center" >NEWS</Heading>
                                     <HomeNews news={news} />
                                 </div>
-
                             </Box>
                         </GridItem>
                         <GridItem colSpan={[5, 5, 2]}>
@@ -46,7 +40,6 @@ const HomeContent = ({ element }) => {
                         </GridItem>
                     </Grid>
                 </Box>
-
                 <Box minW="100vw">
                     <TrendingCoins />
                     <HomeTweetsContainer />
