@@ -3,7 +3,7 @@ import {
   TwitterTimelineEmbed,
 } from 'react-twitter-embed';
 
-const HomeTweets = ({user}) => {
+const Tweets = ({user}) => {
   return (
       <Box boxShadow="dark-lg" rounded="md">
           <TwitterTimelineEmbed
@@ -17,4 +17,4 @@ const HomeTweets = ({user}) => {
   );
 };
 
-export default HomeTweets;
+export default Tweets;

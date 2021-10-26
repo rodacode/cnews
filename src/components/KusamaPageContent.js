@@ -4,7 +4,7 @@ import { Container } from './Container'
 import { Box, Text, Image, Heading } from '@chakra-ui/react';
 
 import HomeKusamaData from './HomeKusamaData'
-import KusamaTweetsContainer from './KusamaTweetsContainer'
+import TweetsContainer from './TweetsContainer'
 import Footer from './Footer'
 
 
@@ -29,10 +29,9 @@ const KusamaPageContent = ({ element }) => {
                         </Box>
                     </Box>
                 </Box>
-
-                <HomeKusamaData />
-                <KusamaTweetsContainer />
+                <TweetsContainer title="KSM" account1="gavofyork" account2="DonnieBigBags" account3="gavofhood" account4="kusamabinladen"/>
                 <Box mt="6">
+                    
                     <iframe src="https://lunarcrush.com/widgets/influencers?filter_string=KSM&interval=1 Week&theme=dark" id="candlestick" frameBorder="0" border="0" cellSpacing="0" scrolling="no" Style="width: 100%; height: 600px;" />
                 </Box>
                 <Footer />

@@ -1,29 +1,29 @@
 import { Box, Heading } from '@chakra-ui/react';
-import HomeTweets from './HomeTweets'
+import Tweets from './Tweets'
 
-const HomeTweetsContainer = () => {
+const TweetsContainer = ({title,account1, account2, account3, account4}) => {
   return (
-    <Box boxShadow="dark-lg" bg="#fff" pt="12" pb="20" borderRadius="50" ml="4" mr="4">
+    <Box boxShadow="dark-lg" bg="#f6f6f6" pt="12" pb="20" borderRadius="50" ml="4" mr="4">
       <Heading textAlign="center" m="12" color="#16161D">On Tweeter</Heading>
       <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
         <Box m="4">
-          <HomeTweets
-            user={"DocumentingBTC"}
+          <Tweets
+            user={account1}
           />
         </Box>
         <Box m="4">
-          <HomeTweets
-            user={"BTC_Archive"}
+          <Tweets
+            user={account2}
           />
         </Box>
         <Box m="4">
-          <HomeTweets
-            user={"BitcoinFear"}
+          <Tweets
+            user={account3}
           />
         </Box>
         <Box m="4">
-          <HomeTweets
-            user={"whale_alert"}
+          <Tweets
+            user={account4}
           />
         </Box>
 
@@ -32,4 +32,4 @@ const HomeTweetsContainer = () => {
   );
 };
 
-export default HomeTweetsContainer;
+export default TweetsContainer;

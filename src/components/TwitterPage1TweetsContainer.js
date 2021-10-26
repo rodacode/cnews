@@ -1,5 +1,5 @@
 import { Box, Heading } from '@chakra-ui/react';
-import HomeTweets from './HomeTweets'
+import Tweets from './Tweets'
 
 const TwitterPage1TweetsContainer = () => {
   return (
@@ -8,22 +8,22 @@ const TwitterPage1TweetsContainer = () => {
         <Heading textAlign="center" m="12" color="#16161D">BITCOIN</Heading>
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"DocumentingBTC"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"BTC_Archive"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"michael_saylor"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"whale_alert"}
             />
           </Box>
@@ -34,22 +34,22 @@ const TwitterPage1TweetsContainer = () => {
         <Heading textAlign="center" m="12" color="#16161D">ALTCOINS</Heading>
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"Tronfoundation"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"AltcoinDailyio"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"danreecer_"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"AltcoinPsycho"}
             />
           </Box>
@@ -60,22 +60,22 @@ const TwitterPage1TweetsContainer = () => {
         <Heading textAlign="center" m="12" color="#16161D">ETHEREUM</Heading>
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"VitalikButerin"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"TimBeiko"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"ethereum"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"DocumentEther"}
             />
           </Box>
@@ -86,22 +86,22 @@ const TwitterPage1TweetsContainer = () => {
         <Heading textAlign="center" m="12" color="#16161D">DEFI</Heading>
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"JoinDefi"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"defiprime"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"DeFi_Dad"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"defipulse"}
             />
           </Box>
@@ -112,22 +112,22 @@ const TwitterPage1TweetsContainer = () => {
         <Heading textAlign="center" m="12" color="#16161D">EXCHANGES</Heading>
         <Box d="flex" flexWrap="wrap" flexDirection="row" justifyContent="center">
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"cz_binance"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"coinbase"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"cryptocom"}
             />
           </Box>
           <Box m="4">
-            <HomeTweets
+            <Tweets
               user={"Uniswap"}
             />
           </Box>

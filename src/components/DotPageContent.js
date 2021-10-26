@@ -4,7 +4,7 @@ import { Container } from './Container'
 import { Box, Text, Image, ListItem, UnorderedList, Heading } from '@chakra-ui/react';
 
 import HomeDOTData from './HomeDOTData'
-import DOTTweetsContainer from './DOTTweetsContainer'
+import TweetsContainer from './TweetsContainer'
 import Footer from './Footer'
 
 
@@ -57,12 +57,9 @@ const DotPageContent = ({ element }) => {
                             <Image borderRadius="5px" src={'./images/PolkadotRelayChain.jpeg'} alt="polkadot design chain" />
                         </Box>
                 </Box>
-
-
-                <HomeDOTData />
-                <DOTTweetsContainer />
+                <TweetsContainer title="DOT" account1="gavofyork" account2="gavofhood" account3="DonnieBigBags" account4="JEFE_DOTSAMA"/>
                 <Box mt="6">
-                    <iframe src="https://lunarcrush.com/widgets/influencers?filter_string=DOT&interval=1 Week&theme=dark" id="candlestick" frameBorder="0" border="0" cellSpacing="0" scrolling="no" Style="width: 100%; height: 600px;" />
+                    <div id="coinmarketcap-widget-marquee" coins="1,1027,825,6636,2010,5034,9285,5426,52" currency="USD" theme="light" transparent="true" show-symbol-logo="true"></div>
                 </Box>
                 <Footer />
             </Box>

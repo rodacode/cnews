@@ -11,7 +11,7 @@ import {
 } from '@chakra-ui/react';
 
 import HomeNews from './HomeNews'
-import HomeTweetsContainer from './HomeTweetsContainer'
+import TweetsContainer from './TweetsContainer'
 import TrendingCoins from './TrendingCoins'
 import Footer from './Footer'
 
@@ -42,7 +42,7 @@ const HomeContent = ({ element }) => {
                 </Box>
                 <Box minW="100vw">
                     <TrendingCoins />
-                    <HomeTweetsContainer />
+                    <TweetsContainer title="BTC" account1="DocumentingBTC" account2="BTC_Archive" account3="BitcoinFear" account4="whale_alert"/>
                     <Footer />
                 </Box>
             </Box>

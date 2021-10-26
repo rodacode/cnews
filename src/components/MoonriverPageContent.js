@@ -4,7 +4,7 @@ import { Container } from './Container'
 import { Box, Text, Image, Heading } from '@chakra-ui/react';
 
 import HomeMoonriverData from './HomeMoonriverData'
-import MoonriverTweetsContainer from './MoonriverTweetsContainer'
+import TweetsContainer from './TweetsContainer'
 import Footer from './Footer'
 
 
@@ -34,9 +34,7 @@ const MoonriverPageContent = ({ element }) => {
                             <Image borderRadius="5px" src={'./images/ParallelParachains.jpeg'} alt="movr design chain" />
                         </Box>
                 </Box>
-
-                <HomeMoonriverData />
-                <MoonriverTweetsContainer />
+                <TweetsContainer title="MOVR" account1="MoonriverNW" account2="Trobriand15" account3="DonnieBigBags" account4="PaulsCryptoCall"/>
                 <Box mt="6">
                     <iframe src="https://lunarcrush.com/widgets/influencers?filter_string=MOVR&interval=1 Week&theme=dark" id="candlestick" frameBorder="0" border="0" cellSpacing="0" scrolling="no" Style="width: 100%; height: 600px;" />
                 </Box>

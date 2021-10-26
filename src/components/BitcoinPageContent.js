@@ -3,7 +3,7 @@ import Header from './Header'
 import { Container } from './Container'
 import { Box, Text, Image } from '@chakra-ui/react';
 
-import HomeTweetsContainer from './HomeTweetsContainer'
+import TweetsContainer from './TweetsContainer'
 import HomeBtcData from './HomeBtcData'
 import HomeBtcNews from './HomeBtcNews'
 import BTCPageTestimonials from './BTCPageTestimonials'
@@ -31,7 +31,7 @@ const BitcoinPageContent = ({ element }) => {
                 <BTCPageTestimonials />
                 <HomeBtcData />
                 <BTCPageTestimonials2 />
-                <HomeTweetsContainer />
+                <TweetsContainer  title="BTC" account1="DocumentingBTC" account2="BTC_Archive" account3="BitcoinFear" account4="whale_alert"/>
                 <HomeBtcNews />
                 <Footer />
             </Box>
