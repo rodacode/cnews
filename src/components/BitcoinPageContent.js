@@ -4,8 +4,6 @@ import { Container } from './Container'
 import { Box, Text, Image } from '@chakra-ui/react';
 
 import TweetsContainer from './TweetsContainer'
-import HomeBtcData from './HomeBtcData'
-import HomeBtcNews from './HomeBtcNews'
 import BTCPageTestimonials from './BTCPageTestimonials'
 import BTCPageTestimonials2 from './BTCPageTestimonials2'
 import Footer from './Footer'
@@ -29,10 +27,8 @@ const BitcoinPageContent = ({ element }) => {
                     </Box>
                 </Box>
                 <BTCPageTestimonials />
-                <HomeBtcData />
                 <BTCPageTestimonials2 />
                 <TweetsContainer  title="BTC" account1="DocumentingBTC" account2="BTC_Archive" account3="BitcoinFear" account4="whale_alert"/>
-                <HomeBtcNews />
                 <Footer />
             </Box>
         </Container>

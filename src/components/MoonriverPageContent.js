@@ -2,8 +2,6 @@ import React from 'react';
 import Header from './Header'
 import { Container } from './Container'
 import { Box, Text, Image, Heading } from '@chakra-ui/react';
-
-import HomeMoonriverData from './HomeMoonriverData'
 import TweetsContainer from './TweetsContainer'
 import Footer from './Footer'
 
@@ -35,9 +33,6 @@ const MoonriverPageContent = ({ element }) => {
                         </Box>
                 </Box>
                 <TweetsContainer title="MOVR" account1="MoonriverNW" account2="Trobriand15" account3="DonnieBigBags" account4="PaulsCryptoCall"/>
-                <Box mt="6">
-                    <iframe src="https://lunarcrush.com/widgets/influencers?filter_string=MOVR&interval=1 Week&theme=dark" id="candlestick" frameBorder="0" border="0" cellSpacing="0" scrolling="no" Style="width: 100%; height: 600px;" />
-                </Box>
                 <Footer />
             </Box>
         </Container>

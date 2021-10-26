@@ -2,8 +2,6 @@ import React from 'react';
 import Header from './Header'
 import { Container } from './Container'
 import { Box, Text, Image, ListItem, UnorderedList, Heading } from '@chakra-ui/react';
-
-import HomeDOTData from './HomeDOTData'
 import TweetsContainer from './TweetsContainer'
 import Footer from './Footer'
 
