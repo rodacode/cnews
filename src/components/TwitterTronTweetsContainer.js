@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Box, Heading, Input, InputLeftElement, InputGroup, InputRightElement, Button } from '@chakra-ui/react';
-import HomeTweets from './HomeTweets'
+import Tweets from './Tweets'
 
 const TwitterTronTweetsContainer = () => {
   const [inputValue1, setInputValue1] = useState('DiarioOle')
@@ -41,35 +41,35 @@ const TwitterTronTweetsContainer = () => {
   }
 
   const Twitters1 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue1}
     />);
   const Twitters2 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue2}
     />);
   const Twitters3 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue3}
     />);
   const Twitters4 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue4}
     />); 
     const Twitters5 = () => (
-      <HomeTweets
+      <Tweets
         user={inputValue5}
       />);
   const Twitters6 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue6}
     />);
   const Twitters7 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue7}
     />);
   const Twitters8 = () => (
-    <HomeTweets
+    <Tweets
       user={inputValue8}
     />);
 
