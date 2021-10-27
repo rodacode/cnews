@@ -7,7 +7,7 @@ import {
     Th,
     Td
 } from '@chakra-ui/react';
-import TopTenCoinsSkeleton from '../components/TopTenCoinsSkeleton'
+import TopTenCoinsSkeleton from '../components/topTenCoins/TopTenCoinsSkeleton'
 
 
 const OraclesWikiContent = ({ element }) => {
