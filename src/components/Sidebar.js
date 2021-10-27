@@ -1,5 +1,5 @@
 import { Flex, Heading } from '@chakra-ui/react'
-import TopTenCoins from './TopTenCoins'
+import TopTenCoins from './TopTenCoins/TopTenCoins'
 import AdBanner from './AdBanner'
 
 export const Sidebar = () => (

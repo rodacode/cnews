@@ -27,14 +27,14 @@ const TrendingCoins = () => {
     }, [])
 
     return (
-        <Box boxShadow="dark-lg"  p="0" m="4" borderRadius="50">
+        <Box boxShadow="dark-lg" p="0" m="4" borderRadius="50">
             <Flex flexDirection='column' flexWrap="wrap">
                 <Box d="flex" flexDirection="row" justifyContent="center" mb="10" mt="10" flexWrap="wrap">
                     <Heading textAlign="center">Trending coins on Coingecko </Heading>
-                    <Image  ml="4" boxSize="50px" src="./images/coingecko_logo.webp" />
+                    <Image ml="4" boxSize="50px" src="./images/coingecko_logo.webp" />
                 </Box>
                 {!isLoading ?
-                    <Box d="flex" flexDirection="row" justifyContent="center" mb="10" flexWrap="wrap" fontSize={["xs","md"]}>
+                    <Box d="flex" flexDirection="row" justifyContent="center" mb="10" flexWrap="wrap" fontSize={["xs", "md"]}>
                         <Table variant="simple" size="md">
                             <Thead>
                                 <Tr>
@@ -46,15 +46,13 @@ const TrendingCoins = () => {
                             <Tbody>
                                 {coins && coins.map((coin) => {
                                     return (
-                                        <React.Fragment key={coin.id}>
-                                            <Tr>
-                                                <Td d="flex" flexDirection="row">
-                                                    <Image mr="2" src={coin.item.thumb} boxSize="20px"
-                                                    />{coin.item.symbol.toUpperCase()}</Td>
-                                                <Td p="0">{coin.item.name.toUpperCase()}</Td>
-                                                <Td>#{coin.item.market_cap_rank}</Td>
-                                            </Tr>
-                                        </React.Fragment>
+                                        <Tr key={coin.id}>
+                                            <Td d="flex" flexDirection="row">
+                                                <Image mr="2" src={coin.item.thumb} boxSize="20px"
+                                                />{coin.item.symbol.toUpperCase()}</Td>
+                                            <Td p="0">{coin.item.name.toUpperCase()}</Td>
+                                            <Td>#{coin.item.market_cap_rank}</Td>
+                                        </Tr>
                                     )
                                 })}
                             </Tbody>

@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useSelector } from "react-redux";
 import { Box, Image } from '@chakra-ui/react';
 import {
     Table,
@@ -11,21 +12,9 @@ import {
 import TopTenCoinsSkeleton from './TopTenCoinsSkeleton'
 
 const TopTenCoins = () => {
-    const [coins, setCoins] = useState()
-    const [isLoading, setIsLoading] = useState(true)
-    const url = 'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
+    const topTenCoins = useSelector((state) => state.topTenCoins)
+    const isLoading = useSelector((state) => state.isLoading)
 
-    useEffect(() => {
-        try {
-            setIsLoading(true)
-            fetch(url).then((res) => res.json()).then((response) => {
-                setCoins(response);
-                setIsLoading(false)
-            })
-        } catch (error) {
-            console.log(error);
-        }
-    }, [])
     return (
         <Box d="flex" p="4" m="4" flexDirection='column' boxShadow="dark-lg"
             borderWidth="1px"
@@ -41,9 +30,9 @@ const TopTenCoins = () => {
                         </Tr>
                     </Thead>
                     <Tbody>
-                        {coins && coins.map((coin) => {
+                        {topTenCoins && topTenCoins.map((coin) => {
                             return (
-                                <Tr>
+                                <Tr key={coin.id}>
                                     <Td><Image src={coin.image} boxSize="20px"
                                     /></Td>
                                     <Td>{coin.symbol.toUpperCase()}</Td>

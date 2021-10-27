@@ -1,36 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import { useSelector } from "react-redux";
 import { Box } from '@chakra-ui/react';
 import NewsCard from './NewsCard';
 import HomeNewsHighlights from './HomeNewsHighlights';
 import HomeNewsSkeleton from './HomeNewsSkeleton';
 
 const HomeNews = () => {
-  const [news, setNews] = useState()
-  const [isLoading, setIsLoading] = useState(true)
-
-  const url = 'https://min-api.cryptocompare.com/data/v2/news/?lang=EN&api_key=62eee749360372fab862d03840783d318375637c3a8a02fd6b8d529cb94a008a'
-
-  useEffect(() => {
-    try {
-      setIsLoading(true)
-      fetch(url).then((res) => res.json()).then((response) => {
-        setNews(response.Data);
-        setIsLoading(false)
-      })
-    } catch (error) {
-      console.log(error);
-    }
-  }, [])
+  const news = useSelector(state => state.news);
+  const isLoading = useSelector((state) => state.isLoading)
 
   return (
     <>
-      { !isLoading ? (
+      {!isLoading ? (
         <Box d="flex" flexDirection="row" justifyContent="space-around" flexWrap="wrap">
           <HomeNewsHighlights />
           {news &&
             news.slice(0, 4).map(news => {
               return (
                 <NewsCard
+                  key={news.id}
                   title={news.title}
                   description={news.body}
                   url={news.url}
