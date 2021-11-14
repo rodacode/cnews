@@ -1,6 +1,5 @@
 import { Flex, Heading } from '@chakra-ui/react'
 import TopTenCoins from './topTenCoins/TopTenCoins'
-import AdBanner from './AdBanner'
 
 export const Sidebar = () => (
   <>
@@ -9,7 +8,7 @@ export const Sidebar = () => (
     </Flex>
     <Flex justifyContent="center" flexDirection="column">
       <TopTenCoins />
-      <AdBanner imageUrl='./images/celsius_network.jpg' />
+      {/* <AdBanner imageUrl='./images/celsius_network.jpg' /> */}
     </Flex>
   </>
 
