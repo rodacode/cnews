@@ -1,25 +1,13 @@
-import {
-    Box,
-    Grid,
-    GridItem,
-    Skeleton,
-    SkeletonText
-} from "@chakra-ui/react"
+import { Box, Skeleton, SkeletonText } from "@chakra-ui/react";
 
 const HomeNewsSkeleton = () => (
-    <Box>
-        <SkeletonText mt="4" noOfLines={1} spacing="4" />
-        <Skeleton height="120px" />
-        <Skeleton height="120px" />
-        <Skeleton height="120px" />
-        <Skeleton height="120px" />
+  <Box>
+    <SkeletonText mt="4" noOfLines={1} spacing="4" />
+    <Skeleton height="120px" />
+    <Skeleton height="120px" />
+    <Skeleton height="120px" />
+    <Skeleton height="120px" />
+  </Box>
+);
 
-    </Box >
-
-
-
-)
-
-
-export default HomeNewsSkeleton
-
+export default HomeNewsSkeleton;
