@@ -9,6 +9,14 @@ export const Sidebar = () => (
     </Flex>
     <Flex justifyContent="center" flexDirection="column">
       <TopTenCoins />
+      <Box p={4}>
+        <Image
+          borderRadius={"md"}
+          src="https://alternative.me/crypto/fear-and-greed-index.png"
+          alt="Latest Crypto Fear & Greed Index"
+        />
+      </Box>
+
       <Box>
         <Link href="https://amzn.to/401Hwlg">
           <Image
