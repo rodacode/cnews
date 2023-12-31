@@ -58,7 +58,8 @@ const HomeContent = ({ element }) => {
             <GridItem colSpan={[5, 5, 3]}>
               <Box>
                 <div ref={element}>
-                  <Heading textAlign="center"> NEWS </Heading> <HomeNews />
+                  <Heading textAlign="center"> CRYPTO NEWS </Heading>{" "}
+                  <HomeNews />
                 </div>{" "}
               </Box>{" "}
             </GridItem>{" "}
