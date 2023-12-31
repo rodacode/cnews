@@ -12,7 +12,7 @@ import {
 import TweetsContainer from "./TweetsContainer";
 import Footer from "./Footer";
 
-const DotPageContent = ({ element }) => {
+const EthereumPageContent = ({ element }) => {
   return (
     <Container width="100vw" minH="100vh">
       <Header />
@@ -42,63 +42,49 @@ const DotPageContent = ({ element }) => {
             alignItems="center"
           >
             <Text fontSize="16px">
-              Polkadot is a next-generation blockchain platform that was created
-              to address the scalability and interoperability issues that
-              currently plague many blockchain networks. Developed by the Web3
-              Foundation, Polkadot allows for the creation of multiple
-              independent blockchains that can communicate and exchange data
-              with each other, leading to greater efficiency and flexibility in
-              the blockchain ecosystem.
+              In the ever-evolving landscape of blockchain technology, Ethereum
+              stands tall as a pioneering force that has redefined the
+              possibilities of decentralized applications (DApps) and smart
+              contracts. Launched in 2015 by visionary Vitalik Buterin and
+              co-founder Gavin Wood, Ethereum has rapidly become the
+              second-largest cryptocurrency by market capitalization. This
+              article will delve into the key points of Ethereum, exploring its
+              history, fundamental concepts, and the transformative impact it
+              has had on the world of decentralized finance (DeFi) and beyond.
             </Text>
             <Box p="2" mt="8" width={["100%", "50%"]}>
               <Text fontSize="24px" mt="12" mb="4">
-                POLKADOT KEY FEATURES
+                ETHEREUM KEY FEATURES
               </Text>
               <UnorderedList>
                 <ListItem fontWeight="bold" mb="2">
-                  Scalability
+                  Flexibility and Versatility
                 </ListItem>
                 <Text fontSize="16px" mb="4">
-                  Polkadot provides unprecedented economic scalability by
-                  enabling a common set of validators to secure multiple
-                  blockchains. Polkadot provides transactional scalability by
-                  spreading transactions across multiple parallel blockchains.{" "}
+                  Ethereum's blockchain is designed to be a flexible and
+                  versatile platform, allowing developers to create a wide range
+                  of applications beyond simple transactions. This adaptability
+                  has contributed to Ethereum's prominence in hosting diverse
+                  decentralized projects.
                 </Text>
                 <ListItem fontWeight="bold" mb="2">
                   Interoperability
                 </ListItem>
                 <Text fontSize="16px" mb="4">
-                  Polkadot enables cross-blockchain transfers of any type of
-                  data or asset, not just tokens. Connecting to Polkadot gives
-                  you the ability to interoperate with a wide variety of
-                  blockchains in the Polkadot network.
+                  Ethereum has facilitated interoperability between different
+                  blockchain networks. Its standards, such as the ERC-20 and
+                  ERC-721 token standards, have become widely adopted, allowing
+                  for seamless integration and interaction between various
+                  projects and platforms.
                 </Text>
                 <ListItem fontWeight="bold" mb="2">
-                  Shared security
+                  Decentralization
                 </ListItem>
                 <Text fontSize="16px" mb="4">
-                  Polkadot's novel data availability and validity scheme allows
-                  chains to interact with each other in a meaningful way. Chains
-                  remain independent in their governance, but united in their
-                  security.
-                </Text>
-                <ListItem fontWeight="bold" mb="2">
-                  On-chain governance
-                </ListItem>
-                <Text fontSize="16px" mb="4">
-                  Polkadot's novel data availability and validity scheme allows
-                  chains to interact with each other in a meaningful way. Chains
-                  remain independent in their governance, but united in their
-                  security.
-                </Text>
-                <ListItem fontWeight="bold" mb="2">
-                  Forkless upgrades
-                </ListItem>
-                <Text fontSize="16px" mb="4">
-                  Polkadot can upgrade without hard forks to integrate new
-                  features or fix bugs. This capability enables Polkadot to
-                  easily adapt to changes and upgrade itself as better
-                  technologies become available.
+                  Ethereum operates on a decentralized network of nodes,
+                  ensuring that no single entity has control over the entire
+                  network. This decentralization enhances security, resilience,
+                  and censorship resistance.
                 </Text>
               </UnorderedList>
             </Box>
@@ -131,12 +117,14 @@ const DotPageContent = ({ element }) => {
               m={"20px auto"}
             />
             <Text fontSize="16px" mb="4">
-              Polkadot is a multi-chain platform that allows for the creation of
-              parallel, independent blockchains that can interact with each
-              other in a seamless and secure manner. The platform is designed to
-              address the scalability and interoperability issues that currently
-              affect many blockchain networks, such as slow transaction speeds
-              and limited functionality.
+              Ethereum's inception is intricately tied to the collaborative
+              efforts of Vitalik Buterin and Gavin Wood. In 2013, Buterin
+              envisioned a blockchain that transcended the limitations of
+              Bitcoin, focusing on enabling smart contracts. Wood, Ethereum's
+              co-founder, played a pivotal role in the technical development of
+              the platform. In 2014, a groundbreaking crowdfunding campaign
+              raised over $18 million to fund Ethereum's development, and the
+              network officially went live on July 30, 2015.
             </Text>
             <Text fontSize="16px" mb="4">
               Polkadot was developed by the Web3 Foundation, a non-profit
@@ -158,28 +146,13 @@ const DotPageContent = ({ element }) => {
               to revolutionize the way that decentralized applications are built
               and deployed.
             </Text>
-            <Text fontSize="26px" fontWeight={"bold"} mb="4">
-              How Polkadot Works
-            </Text>
+
             <Text fontSize="16px" mb="4">
-              Polkadot is built on a unique architecture that allows for the
-              creation of multiple independent blockchains that can communicate
-              and exchange data with each other. This architecture is designed
-              to address the scalability and interoperability issues that
-              currently affect many blockchain networks, allowing for greater
-              efficiency and flexibility in the ecosystem. At the core of
-              Polkadot is the relay chain, which serves as the backbone of the
-              entire network. This relay chain connects all of the individual
-              blockchains that are built on top of it, allowing for the seamless
-              transfer of data and assets between them. Each individual
-              blockchain in the Polkadot network is referred to as a
-              "parachain." These parachains are built on top of the relay chain
-              and are able to communicate with each other using a common set of
-              protocols and standards. One of the key benefits of Polkadot's
-              architecture is its ability to support multiple consensus
-              mechanisms. This allows for greater flexibility in how individual
-              blockchains are secured and maintained, depending on their
-              specific needs and requirements.
+              Recognizing the need for scalability improvements, Ethereum 2.0,
+              also known as Serenity, was proposed as a comprehensive upgrade.
+              The transition includes the adoption of the Proof-of-Stake (PoS)
+              consensus mechanism to enhance scalability, security, and
+              sustainability.
             </Text>
             <Text fontSize="16px" mb="4">
               In addition to supporting multiple consensus mechanisms, Polkadot
@@ -215,4 +188,4 @@ const DotPageContent = ({ element }) => {
   );
 };
 
-export default DotPageContent;
+export default EthereumPageContent;
