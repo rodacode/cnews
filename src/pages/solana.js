@@ -1,11 +1,11 @@
-import { Container } from '../components/Container'
-import Navbar from "../components/NavBar"
+import { Container } from '../components/Container.jsx'
+import Navbar from "../components/NavBar.js"
 import Head from 'next/head'
-import DotPageContent from  "../components/DotPageContent"
+import SolanaPageContent from  "../components/SolanaPageContent.jsx"
 import useSticky from "../hooks/useSticky.js"
 import { getDomainLocale } from 'next/dist/next-server/lib/router/router'
 
-const Cardano = () => {
+const Solana = () => {
     const { isSticky, element } = useSticky()
 
   return (
@@ -18,10 +18,10 @@ const Cardano = () => {
       </Head>
       <Container width="100vw" minH="100vh">
         <Navbar sticky={isSticky} />
-        <DotPageContent element={element}/>
+        <SolanaPageContent element={element}/>
       </Container>
     </>
   )
 }
 
-export default Cardano
+export default Solana
